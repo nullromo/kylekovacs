@@ -4,4 +4,4 @@ The files in this folder are articles that I have written. Browse the files dire
 
 ## Articles
 
-- My [Commander Primer](commander-primer.md) introduces the Commander format for Magic: The Gathering.
+- My [Commander Primer](commander-primer/) introduces the Commander format for Magic: The Gathering.

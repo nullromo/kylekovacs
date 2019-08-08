@@ -4,4 +4,4 @@ The files in this folder are descriptions of projects that I have worked on. Bro
 
 ## Projects
 
-- asdf.
+- Template code for using [encoders with arduino](arduino-encoder/).

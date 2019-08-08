@@ -20,9 +20,10 @@ The deckbuilding rules are the following:
 
 - Decks contain exactly 100 cards
 - Decks are singleton (each deck can only contain one copy of a given card)
-- One card in the deck is designated as the "commander" of the deck
+  - This rule does not apply to basic lands
+- One card in the deck is designated as the **commander** of the deck
   - The commander must be a legendary creature
-- All the non-commander cards in the deck must fall under the "color identity" of the commander.
+- All the non-commander cards in the deck must fall under the **color identity** of the commander.
   - Color identity is determined by the mana symbols on the card in either the card's cost or its rules text. For example, the card Ancient Grudge is red, but its color identity is red and green. Hybrid mana symbols, like those seen in Dovescape count as both colors when determining the card's color and when determining its color identity. Hence, Dovescape is blue and white, and its color identity is blue and white.
 
     > Note that mana symbols in reminder text do not count as mana symbols in a card's rules text. Example: the _Extort_ mechanic, as seen in Blind Obedience does not change a card's color identity. Blind Obedience is white, and its color identity is white.
@@ -41,19 +42,21 @@ In addition to the deckbuilding rules, there are some in-game rules specific to 
 
 The relevant game rules are the following:
 
-- You may not have known it, but in every game of MTG there is a zone called the _command zone_. This is where commanders live at the start of the game, and it's where they normally return to when they die.
+- Players start at 40 life
+- You may not have known it, but in every game of MTG there is a zone called the **command zone**. This is where commanders live at the start of the game, and it's where they normally return to when they die.
 
   > Note, the command zone is also used for other things with which you may be familiar, such as planeswalker emblems and conspiracies.
 
 - You may cast your commander from the command zone as if it were in your hand.
 - Any time a commander you own would change zones, you may have it go to the command zone instead of whatever zone it would have gone to. This means, for example, that if your commander is on the battlefield and it is destroyed, you may put it in the command zone instead of in your graveyard. Likewise, if your commander is in your graveyard (perhaps because you chose not to return it to the command zone after it died) and it would be exiled, you may choose to return it to the command zone instead.
-  - Keep in mind that a commander that returns to the command zone when it is destroyed doesn't actually die. Since moving to the command zone is a replacement effect, the commander never enters the graveyard, and so never actually triggers any "whenever a creature dies..."-type abilities.
-- Every time you cast your commander from the command zone, it costs 2 more generic mana to cast for each time you have cast it from the command zone that game.
+
+  > Keep in mind that a commander that returns to the command zone when it is destroyed doesn't actually die. Since moving to the command zone is a replacement effect, the commander never enters the graveyard, and so never actually triggers any "whenever a creature dies..."-type abilities.
+
+- Every time you cast your commander from the command zone, it costs 2 more generic mana to cast for each time you have cast it from the command zone that game. This is often called the **commander tax**.
 - If a player is dealt 21 damage (over half their starting life total) by a single commander, that player loses the game as a state-based action.
-  - This so-called "commander damage" is tracked across the whole game, even if the damage-dealing commander leaves and re-enters the battlefield many times.
+  - This so-called **commander damage** is tracked across the whole game, even if the damage-dealing commander leaves and re-enters the battlefield many times.
   - Noncombat damage also counts as commander damage.
-- Players start at 40 life
-- Each player gets 1 free mulligan (you can draw back up to 7 after your first mulligan, then 6 after your second, etc.)
+- Each player gets 1 free mulligan (you can keep 7 cards after your first mulligan, then 6 after your second, etc.)
 - The player who goes first does not skip their first draw step
 
 Commander is best played with 4 players at a time. If a player loses the game, all cards owned by that player cease to exist (from the game's perspective) and the game continues on with the remaining players. If a player wins the game, the game ends and all other players lose.
@@ -62,7 +65,7 @@ Commander is best played with 4 players at a time. If a player loses the game, a
 
 A big part of what makes the format fun is the in-game politics. Some games play out relatively evenly, while other games see one player gain an early advantage and get teamed up on. The fun of commander is that even though your deck has the same cards in it, no two games play out the same way. Often in formats like Standard, which has a very narrow metagame, matchups can be deterministic and the same matchup will often play out the same way. This does not mean that Standard is boring, but it's definitely a different feeling and Commander has such a wide variety of things going on that it never seems to get boring.
 
-> **History Note**: Commander is often called Elder Dragon Highlander (EDH). This is a reference to 2 things. First, when Commander was invented, the only legal commanders were the five Elder Dragons, pictured below. Second, the movie _Highlander_ popularaized the phrase "there can only be one," which refers here to the singleton nature of Commander.
+> **History Note**: Commander is often called Elder Dragon Highlander (EDH). This is a reference to 2 things. First, when Commander was invented, the only legal commanders were the five Elder Dragons, pictured below. Second, the movie _Highlander_ popularaized the phrase "there can only be one," which refers here to the singleton nature of the format. Since all the Elder Dragons have 7 power, the commander damage rule was set at 21 to account for 3 hits from an Elder Dragon.
 >
 > | Arcades Sabboth | Chromium | Nicol Bolas |
 > |:-:|:-:|:-:|
@@ -106,7 +109,7 @@ You can ask Gatherer for all kinds of things. Let's say we are building a deck w
 |-|-|-|
 | ![green white lands search][green white lands search] | ![green white lands exclude][green white lands exclude] | ![green white lands terms][green white lands terms] |
 
-Here we make sure to exclude lands that contain the blue, red, and black mana symbols, becuase those would be illegal in a deck with a commander whose color identity is only green and white. You should end up at [this page][green white lands], which has 30 results. Wow, that's a lot of green-white dual lands!
+Here we make sure to exclude lands that contain the blue, red, and black mana symbols, becuase those would be illegal in a deck with a commander whose color identity is only green and white. You should end up at [this page][green white lands], which has over 29 results. Wow, that's a lot of green-white dual lands!
 
 > **NOTE**: keep in mind that there may be other non-obvious factors. In the example above, we do not see lands like Command Tower, Gemstone Mine, Cascading Cataracts, or Painted Bluffs, even though they would be legal in an only green and white deck.
 >
@@ -429,14 +432,14 @@ You will probably have a lot more than 100 cards picked out and categorized at t
 
 ### Other things to keep in mind
 
-Your budget may get in the way. This is normal. Sometimes it is useful to make a separate MTGGoldfish decklist ("My Commander - Wishlist" or something) to keep track of the cards you really want but that may be too expensive.
+Your budget may get in the way. This is normal. Sometimes it is useful to make a separate MTGGoldfish decklist ("My Commander - Wishlist" or something) to keep track of the cards you really want but that may be too expensive for now.
 
 Sometimes people like to make decks that follow a particular theme. Some crazy ones include "all nonland cards in the deck depict a character wearing a cape or a cloak," "All cards in the deck start with the letter 'S,'" and "All spells in the deck cost exactly 4 mana." It is probably unwise to build your very first deck like this, as the deck may not be that good and you will likely have a bad experience with it. But if that's the kind of deck you want, then it's perfectly fine. It does feel pretty good to win a game and then tell people, "oh yeah by the way, this is 'of'-tribal. All my nonland cards are named 'xxx of xxx.'" But this is an advanced form of memery that should be avoided on your first go around.
 
 
 ## Pick card versions
 
-If you go back to editing your MTGGoldfish decklist, you will see the option to `Use Specific Card Versions.` Check this box. Then you can go through the cards in your deck and choose which printing of the cards you want to buy. Simply add the three-letter set symbol to the end of the card name in the list. For example, `1 Tranquil Thicket` would instead become `1 Tranquil Thicket [CMA]` if you want the Commander Anthologies version, and `1 Tranquil Thicket [ONS]` if you want the Onslaught version. Often times you won't care about the printing, and you can skip this step if you want. But sometimes it can be fun to get alternate art cards or certain printings that you like.
+Once you've cut down to 100 cards (99 + your commander) and transferred the Deckstats list back over to MTGGoldfish, you'll want to select card versions. If you go back to editing your MTGGoldfish decklist, you will see the option to `Use Specific Card Versions.` Check this box. Then you can go through the cards in your deck and choose which printing of the cards you want to buy. Simply add the three-letter set symbol to the end of the card name in the list. For example, `1 Tranquil Thicket` would instead become `1 Tranquil Thicket [CMA]` if you want the Commander Anthologies version, and `1 Tranquil Thicket [ONS]` if you want the Onslaught version. Often times you won't care about the printing, and you can skip this step if you want. But sometimes it can be fun to get alternate art cards or certain printings that you like.
 
 ### What are the versions of a card?
 
@@ -498,7 +501,7 @@ After optimization, there will be three carts shown. One only uses items from TC
 
 ### Order the cards
 
-After selecting the cart you want, go ahead and order the cards! When your packages arrive, make sure to leave reviews for the orders. If the order got there and it was correct, give 5 stars. If it wasn't correct for any reason, give them 1 star and say why you were dissatisfied. This has happened to me serveral times, and every single time the seller will contact me, refund me, send a replacement, etc. after which I delete my old review and leave a new 3-, 4-, or 5-star review. One time I got the correct $15 card and the wrong $2 card in an order. The seller refunded my entire order of $17 (not just the incorrect card) and still sent me a replacement of the $2 card. Needless to say, I updated my order to 5 stars. Magic card sellers are nice, so don't be afraid to contact them if an order is wrong. At the same time, give credit where it is due and send positive feedback to good sellers.
+After selecting the cart you want, go ahead and order the cards! When your packages arrive, make sure to leave reviews for the orders. If the order got there and it was correct, give 5 stars. If it wasn't correct for any reason, give them 1 star and say why you were dissatisfied. This has happened to me serveral times, and every single time the seller will contact me, refund me, send a replacement, etc. after which I delete my old review and leave a new 3-, 4-, or 5-star review. One time I got the correct $15 card and the wrong $2 card in an order. The seller refunded my entire order of $17 (not just the incorrect card) and still sent me a replacement of the $2 card. Needless to say, I updated my review to 5 stars. Magic card sellers are nice, so don't be afraid to contact them if an order is wrong. At the same time, give credit where it is due and send positive feedback to good sellers.
 
 ## Time to play the game!
 
@@ -511,6 +514,8 @@ Once you have your deck, it's time to play some Magic. Here are some tips:
   - I recommend UltraPro Eclipse sleeves. You can get about 800 of them for around $56, so that's 7 cents per sleeve.
     - If you have cards in your deck that are worth over $50, it is a good idea to double-sleeve the deck. I recommend KMC Perfect Size sleeves as your inner sleeve. These can be bought in lots of 1000 for about $25, so that's 2.5 cents per sleeve.
   - An overall cost of 9.5 cents per sleeve times 100 cards is just $9.50 to protect your deck. That is definitely worth it in the long run.
+  - Put the commander in a different sleeve than the rest of the cards! This way if you accidentally shuffle your commander into your deck, it's easy to find it.
+  - Always have a few extra sleeves on hand in case one breaks.
 - Use a deck box.
   - I am not that experienced with deck boxes, and the ones I use are boxes that I made out of wood or cardboard. It's possible to spend a lot of money on a good deck box, but you don't need to. Cardboard card boxes are fine, but it just depends on what you want/like.
 - Buy a playmat.
@@ -569,108 +574,108 @@ I hope this guide was helpful. I hope you have a great time playing Commander an
 
 
 [//]: # (card images)
-[Ancient Grudge]: https://img.scryfall.com/cards/large/en/mm3/88.jpg?1517813031 "Ancient Grudge is red, but its color identity is red and green"
-[Dovescape]: https://img.scryfall.com/cards/large/en/dis/143.jpg?1517813031 "Dovescape is blue and white, and its color identity is blue and white"
-[Blind Obedience]: https://img.scryfall.com/cards/large/en/c17/57.jpg?1517813031 "Blind Obedience is white, and its color identity is white"
-[Arcades Sabboth]: https://img.scryfall.com/cards/large/en/me3/142.jpg?1517813031 "The five Elder Dragons"
-[Chromium]: https://img.scryfall.com/cards/large/en/me3/147.jpg?1517813031 "The five Elder Dragons"
-[Nicol Bolas]: https://img.scryfall.com/cards/large/en/me3/163.jpg?1517813031 "The five Elder Dragons"
-[Vaevictis Asmadi]: https://img.scryfall.com/cards/large/en/me3/185.jpg?1517813031 "The five Elder Dragons"
-[Palladia-Mors]: https://img.scryfall.com/cards/large/en/me3/164.jpg?1517813031 "The five Elder Dragons"
-[Ancestral Recall Beta]: https://img.scryfall.com/cards/large/front/4/6/46b0a5c2-ac85-448e-9e87-12fc74fd4147.jpg?1559591672 "Old wording of Ancestral Recall"
-[Ancestral Recall]: https://img.scryfall.com/cards/large/en/ovnt/2005.jpg?1523193155 "New wording of Ancestral Recall"
-[Glasses of Urza Beta]: https://img.scryfall.com/cards/large/en/leb/246.jpg?1525123591 "Old printing of Glasses of Urza"
-[Glasses of Urza]: https://img.scryfall.com/cards/large/en/me4/203.jpg?1517813031 "New printing of Glasses of Urza"
-[Command Tower]: https://img.scryfall.com/cards/large/en/c18/240.jpg?1535505276 "Command Tower"
-[Gemstone Mine]: https://img.scryfall.com/cards/large/en/tsb/119.jpg?1517813031 "Gemstone Mine"
-[Cascading Cataracts]: https://img.scryfall.com/cards/large/front/7/7/778739db-4431-4e58-91de-d2619aeef3ce.jpg?1543676358 "Cascading Cataracts"
-[Painted Bluffs]: https://img.scryfall.com/cards/large/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg?1543676399 "Painted Bluffs"
-[Barktooth Warbeard]: https://img.scryfall.com/cards/large/en/me3/144.jpg?1517813031 "Barktooth Warbeard"
-[Gabriel Angelfire]: https://img.scryfall.com/cards/large/en/me3/148.jpg?1517813031 "Gabriel Angelfire"
-[Gallowbraid]: https://img.scryfall.com/cards/large/en/wth/70.jpg?1517813031 "Gallowbraid"
-[Sir Shandlar of Eberyn]: https://img.scryfall.com/cards/large/en/me3/174.jpg?1517813031 "Sir Shandlar of Eberyn"
-[Uril, the Miststalker]: https://img.scryfall.com/cards/large/en/arb/124.jpg?1517813031 "Uril, the Miststalker"
-[Sliver Legion]: https://img.scryfall.com/cards/large/en/fut/158.jpg?1517813031 "Sliver Legion"
-[Sram, Senior Edificer]: https://img.scryfall.com/cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg?1543698649 "Sram, Senior Edificer"
-[Island]: https://img.scryfall.com/cards/large/en/bfz/258.jpg?1517813031 "Island"
-[Elvish Spirit Guide]: https://img.scryfall.com/cards/large/en/prm/65654.jpg?1517813031 "Elvish Spirit Guide"
-[Flash]: https://img.scryfall.com/cards/large/en/a25/57.jpg?1521725488 "Flash"
-[Protean Hulk]: https://img.scryfall.com/cards/large/front/d/a/dac2252b-2eb4-458d-b838-860ce741a82d.jpg?1551119594 "Protean Hulk"
-[Carrion Feeder]: https://img.scryfall.com/cards/large/en/ema/84.jpg?1519048366 "Carrion Feeder"
-[Karmic Guide]: https://img.scryfall.com/cards/large/en/cma/13.jpg?1519868228 "Karmic Guide"
-[Academy Rector]: https://img.scryfall.com/cards/large/en/uds/1.jpg?1517813031 "Academy Rector"
-[Grand Abolisher]: https://img.scryfall.com/cards/large/en/e01/12.jpg?1517813031 "Grand Abolisher"
-[Animate Dead]: https://img.scryfall.com/cards/large/en/ema/78.jpg?1519048330 "Animate Dead"
-[Sylvan Safekeeper]: https://img.scryfall.com/cards/large/en/cma/152.jpg?1519869867 "Sylvan Safekeeper"
-[Mikaeus, the Unhallowed]: https://img.scryfall.com/cards/large/front/8/8/8879190f-d8ff-47ce-a5d8-6a481a67236a.jpg?1547516963 "Mikaeus, the Unhallowed"
-[Walking Ballista]: https://img.scryfall.com/cards/large/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg?1543701177 "Walking Ballista"
-[Warp World]: https://img.scryfall.com/cards/large/en/m10/163.jpg?1517813031 "Warp World"
-[Scrambleverse]: https://img.scryfall.com/cards/large/en/m12/153.jpg?1517813031 "Scrambleverse"
-[Dimensional Breach]: https://img.scryfall.com/cards/large/en/scg/9.jpg?1517813031 "Dimensional Breach"
-[Cataclysm]: https://img.scryfall.com/cards/large/en/tpr/8.jpg?1517813031 "Cataclysm"
-[Crypt Ghast]: https://img.scryfall.com/cards/large/en/c14/139.jpg?1530677866 "Crypt Ghast"
-[Zendikar Resurgent]: https://img.scryfall.com/cards/large/en/c17/160.jpg?1517813031 "Zendikar Resurgent"
-[Caged Sun]: https://img.scryfall.com/cards/large/en/cm2/178.jpg?1534112610 "Caged Sun"
-[Extraplanar Lens]: https://img.scryfall.com/cards/large/en/mrd/169.jpg?1517813031 "Extraplanar Lens"
-[Commander's Sphere]: https://img.scryfall.com/cards/large/en/c18/200.jpg?1535504702 "Commander's Sphere"
-[Chromatic Lantern]: https://img.scryfall.com/cards/large/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg?1538880985 "Chromatic Lantern"
-[Coalition Relic]: https://img.scryfall.com/cards/large/en/dde/54.jpg?1517813031 "Coalition Relic"
-[Rampant Growth]: https://img.scryfall.com/cards/large/en/mir/235.jpg?151781303 "Rampant Growth"
-[Cultivate]: https://img.scryfall.com/cards/large/en/cm2/135.jpg?1534112100 "Cultivate"
-[Kodama's Reach]: https://img.scryfall.com/cards/large/front/1/0/102d20e6-5179-44b7-9abd-f1defc15ca6a.jpg?1547517639 "Kodama's Reach"
-[Explosive Vegetation]: https://img.scryfall.com/cards/large/en/c18/144.jpg?1535503933 "Explosive Vegetation"
-[Thran Dynamo]: https://img.scryfall.com/cards/large/en/ima/230.jpg?1530592677 "Thran Dynamo"
-[Charcoal Diamond]: https://img.scryfall.com/cards/large/en/c14/235.jpg?1530678599 "Charcoal Diamond"
-[Sky Diamond]: https://img.scryfall.com/cards/large/en/c14/269.jpg?1530678899 "Sky Diamond"
-[Simic Signet]: https://img.scryfall.com/cards/large/en/cm2/215.jpg?1534113028 "Simic Signet"
-[Azorius Signet]: https://img.scryfall.com/cards/large/en/c18/196.jpg?1535504653 "Azorius Signet"
-[Mind Stone]: https://img.scryfall.com/cards/large/en/c18/210.jpg?1535504843 "Mind Stone"
-[Hedron Archive]: https://img.scryfall.com/cards/large/en/c18/206.jpg?1535504778 "Hedron Archive"
-[Dreamstone Hedron]: https://img.scryfall.com/cards/large/en/c18/204.jpg?1535504753 "Dreamstone Hedron"
-[Sol Ring]: https://img.scryfall.com/cards/large/en/c18/222.jpg?1535505021 "Sol Ring"
-[Path to Exile]: https://img.scryfall.com/cards/large/en/e02/3.jpg?1524753609 "Path to Exile"
-[Swords to Plowshares]: https://img.scryfall.com/cards/large/en/bbd/110.jpg?1529061986 "Swords to Plowshares"
-[Rapid Hybridization]: https://img.scryfall.com/cards/large/front/9/1/917df0f5-af77-4e8a-af81-2f78a432b520.jpg?1551119698 "Rapid Hybridization"
-[Pongify]: https://img.scryfall.com/cards/large/en/c14/120.jpg?1530677726 "Pongify"
-[Oblivion Ring]: https://img.scryfall.com/cards/large/en/td0/B8.jpg?1517813031 "Oblivion Ring"
-[Banishing Light]: https://img.scryfall.com/cards/large/en/cm2/18.jpg?1534110665 "Banishing Light"
-[Vindicate]: https://img.scryfall.com/cards/large/en/a25/219.jpg?1521725862 "Vindicate"
-[Anguished Unmaking]: https://img.scryfall.com/cards/large/en/soi/242.jpg?1517813031 "Anguished Unmaking"
-[Violent Ultimatum]: https://img.scryfall.com/cards/large/en/ala/206.jpg?1517813031 "Violent Ultimatum"
-[Decimate]: https://img.scryfall.com/cards/large/en/c18/175.jpg?1535504341 "Decimate"
-[Crush Contraband]: https://img.scryfall.com/cards/large/front/1/3/13e162b3-2e5a-4235-a2a7-1c8e3e9f2c19.jpg?1538878225 "Crush Contraband"
-[Casualties of War]: https://img.scryfall.com/cards/large/front/0/8/08fc5e50-c6f7-41ec-815a-5667eefded78.jpg?1555741203 "Casualties of War"
-[Skullclamp]: https://img.scryfall.com/cards/large/en/c17/222.jpg?1517813031 "Skullclamp"
-[Greed]: https://img.scryfall.com/cards/large/en/c13/79.jpg?1517813031 "Greed"
-[Wheel of Fortune]: https://img.scryfall.com/cards/large/en/me4/140.jpg?1517813031 "Wheel of Fortune"
-[Opportunity]: https://img.scryfall.com/cards/large/en/7ed/91.jpg?1517813031 "Opportunity"
-[Citadel Siege]: https://img.scryfall.com/cards/large/en/cm2/21.jpg?1534110701 "Citadel Siege"
-[Monastary Siege]: https://img.scryfall.com/cards/large/en/c17/88.jpg?1517813031 "Monastary Siege"
-[Palace Siege]: https://img.scryfall.com/cards/large/en/c17/119.jpg?1517813031 "Palace Siege"
-[Outpost Siege]: https://img.scryfall.com/cards/large/en/c17/139.jpg?1517813031 "Outpost Siege"
-[Frontier Siege]: https://img.scryfall.com/cards/large/en/c17/150.jpg?1517813031 "Frontier Siege"
-[Lifecrafter's Bestiary]: https://img.scryfall.com/cards/large/front/7/4/7439a855-4041-4d14-8edf-6741a734e55d.jpg?1543700866 "Lifecrafter's Bestiary"
-[Deathreap Ritual]: https://img.scryfall.com/cards/large/en/c18/174.jpg?1535504328 "Deathreap Ritual"
-[Soul Warden]: https://img.scryfall.com/cards/large/en/mm3/24.jpg?1517813031 "Soul Warden"
-[Sensei's Divining Top]: https://img.scryfall.com/cards/large/en/chk/268.jpg?1517813031 "Sensei's Divining Top"
-[Wrath of God]: https://img.scryfall.com/cards/large/en/ema/38.jpg?1519048065 "Wrath of God"
-[Damnation]: https://img.scryfall.com/cards/large/en/mm3/63.jpg?1517813031 "Damnation"
-[Blasphemous Act]: https://img.scryfall.com/cards/large/en/c18/120.jpg?1535503611 "Blasphemous Act"
-[Evacuation]: https://img.scryfall.com/cards/large/en/c16/91.jpg?1517813031 "Evacuation"
-[Austere Command]: https://img.scryfall.com/cards/large/en/ima/10.jpg?1530591620 "Austere Command"
-[Merciless Eviction]: https://img.scryfall.com/cards/large/en/cm2/160.jpg?1534112392 "Merciless Eviction"
-[Back to Nature]: https://img.scryfall.com/cards/large/en/m15/169.jpg?1517813031 "Back to Nature"
-[Shatterstorm]: https://img.scryfall.com/cards/large/en/6ed/205.jpg?1517813031 "Shatterstorm"
-[Counterspell]: https://img.scryfall.com/cards/large/en/btd/6.jpg?1517813031 "Counterspell"
-[Summary Dismissal]: https://img.scryfall.com/cards/large/en/emn/75.jpg?1517813031 "Summary Dismissal"
-[Cryptic Command]: https://img.scryfall.com/cards/large/en/ima/48.jpg?1530591840 "Cryptic Command"
-[Draining Whelk]: https://img.scryfall.com/cards/large/en/tsp/57.jpg?1517813031 "Draining Whelk"
-[Talrand, Sky Summoner]: https://img.scryfall.com/cards/large/front/8/3/83c74e76-c6ce-4107-8816-0be8c20d7617.jpg?1547516612 "Talrand, Sky Summoner"
-[Animar, Soul of Elements]: https://img.scryfall.com/cards/large/en/pz1/93.jpg?1517813031 "Animar, Soul of Elements"
-[Rakdos, the Showstopper]: https://img.scryfall.com/cards/large/front/4/e/4e3c30c7-c52e-41a0-b7c2-21d39c05160b.jpg?1549414926 "Rakdos, the Showstopper"
-[Mana Tithe]: https://img.scryfall.com/cards/large/en/plc/25.jpg?1517813031 "Mana Tithe"
-[Stifle]: https://img.scryfall.com/cards/large/en/scg/52.jpg?1517813031 "Stifle"
-[Ricochet Trap]: https://img.scryfall.com/cards/large/en/wwk/87.jpg?1530592532 "Ricochet Trap"
+[Ancient Grudge]: https://img.scryfall.com/cards/large/front/3/d/3d7313d3-e6fb-4e82-b558-5fcfd5b71177.jpg "Ancient Grudge is red, but its color identity is red and green"
+[Dovescape]: https://img.scryfall.com/cards/large/front/b/6/b6e3d6e6-ac17-4d73-acac-089442de4af6.jpg "Dovescape is blue and white, and its color identity is blue and white"
+[Blind Obedience]: https://img.scryfall.com/cards/large/front/7/7/77fccacf-a9b3-4290-9b83-24188e7c885b.jpg "Blind Obedience is white, and its color identity is white"
+[Arcades Sabboth]: https://img.scryfall.com/cards/large/front/8/5/8520de8b-0d8d-465a-b112-342ecbbaffa6.jpg "The five Elder Dragons"
+[Chromium]: https://img.scryfall.com/cards/large/front/1/5/15ec5a20-4e8f-40b2-9abf-c0bf1cf816c3.jpg "The five Elder Dragons"
+[Nicol Bolas]: https://img.scryfall.com/cards/large/front/e/6/e683de3c-55fc-4b4c-a7ca-f0c7e67a9b0f.jpg "The five Elder Dragons"
+[Vaevictis Asmadi]: https://img.scryfall.com/cards/large/front/d/f/df01b548-9738-4c84-beb6-9a375f41d496.jpg "The five Elder Dragons"
+[Palladia-Mors]: https://img.scryfall.com/cards/large/front/e/d/ede0ce7a-0799-40b9-b725-665dc9c1cede.jpg "The five Elder Dragons"
+[Ancestral Recall Beta]: https://img.scryfall.com/cards/large/front/4/6/46b0a5c2-ac85-448e-9e87-12fc74fd4147.jpg "Old wording of Ancestral Recall"
+[Ancestral Recall]: https://img.scryfall.com/cards/large/front/9/6/961d3fd1-0ddc-47bf-8b7b-201b812da0f5.jpg "New wording of Ancestral Recall"
+[Glasses of Urza Beta]: https://img.scryfall.com/cards/large/front/e/b/eb6953fd-ee48-49dc-9c9c-bfb9a9dc06d0.jpg "Old printing of Glasses of Urza"
+[Glasses of Urza]: https://img.scryfall.com/cards/large/front/4/b/4bd9f45f-30b3-4bff-9fd3-9a71137ac741.jpg "New printing of Glasses of Urza"
+[Command Tower]: https://img.scryfall.com/cards/large/front/6/d/6d28946e-a478-4e0b-b39b-ec0236ddc9a5.jpg "Command Tower"
+[Gemstone Mine]: https://img.scryfall.com/cards/large/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg "Gemstone Mine"
+[Cascading Cataracts]: https://img.scryfall.com/cards/large/front/7/7/778739db-4431-4e58-91de-d2619aeef3ce.jpg "Cascading Cataracts"
+[Painted Bluffs]: https://img.scryfall.com/cards/large/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg "Painted Bluffs"
+[Barktooth Warbeard]: https://img.scryfall.com/cards/large/front/b/f/bffbda3c-61c0-421d-a724-6bb9a7005c0f.jpg "Barktooth Warbeard"
+[Gabriel Angelfire]: https://img.scryfall.com/cards/large/front/2/e/2e349074-1402-44cf-be19-33a661cff3b6.jpg "Gabriel Angelfire"
+[Gallowbraid]: https://img.scryfall.com/cards/large/front/8/d/8df86192-6374-42ac-94bc-95e2e8284bd6.jpg "Gallowbraid"
+[Sir Shandlar of Eberyn]: https://img.scryfall.com/cards/large/front/2/a/2a92c419-8f1e-4604-824d-28b086b54216.jpg "Sir Shandlar of Eberyn"
+[Uril, the Miststalker]: https://img.scryfall.com/cards/large/front/1/1/11e22185-47d0-465b-8181-afe194af5cac.jpg "Uril, the Miststalker"
+[Sliver Legion]: https://img.scryfall.com/cards/large/front/8/b/8bd37a04-87b1-42ad-b3e2-f17cd8998f9d.jpg "Sliver Legion"
+[Sram, Senior Edificer]: https://img.scryfall.com/cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg "Sram, Senior Edificer"
+[Island]: https://img.scryfall.com/cards/large/front/6/9/695f7519-b011-4a86-9226-80c2d9747a42.jpg "Island"
+[Elvish Spirit Guide]: https://img.scryfall.com/cards/large/front/8/d/8d77623b-c0a2-41a1-ae88-9015814ebab5.jpg "Elvish Spirit Guide"
+[Flash]: https://img.scryfall.com/cards/large/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg "Flash"
+[Protean Hulk]: https://img.scryfall.com/cards/large/front/d/a/dac2252b-2eb4-458d-b838-860ce741a82d.jpg "Protean Hulk"
+[Carrion Feeder]: https://img.scryfall.com/cards/large/front/d/3/d3e33835-a293-4a1f-85d5-8ac22360ef35.jpg "Carrion Feeder"
+[Karmic Guide]: https://img.scryfall.com/cards/large/front/b/0/b0768971-88ed-4166-aede-209654878e53.jpg "Karmic Guide"
+[Academy Rector]: https://img.scryfall.com/cards/large/front/4/3/4367bc78-0912-4abd-8edd-bc792558d01a.jpg "Academy Rector"
+[Grand Abolisher]: https://img.scryfall.com/cards/large/front/b/4/b4c4f694-618a-43ed-8781-2a51a234ba8e.jpg "Grand Abolisher"
+[Animate Dead]: https://img.scryfall.com/cards/large/front/7/b/7b83536a-efa4-41f3-9424-75b0efc0aea5.jpg "Animate Dead"
+[Sylvan Safekeeper]: https://img.scryfall.com/cards/large/front/6/0/60d695b3-b02b-42c6-bf1b-9d97a8d82eae.jpg "Sylvan Safekeeper"
+[Mikaeus, the Unhallowed]: https://img.scryfall.com/cards/large/front/8/8/8879190f-d8ff-47ce-a5d8-6a481a67236a.jpg "Mikaeus, the Unhallowed"
+[Walking Ballista]: https://img.scryfall.com/cards/large/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg "Walking Ballista"
+[Warp World]: https://img.scryfall.com/cards/large/front/a/a/aa6e1fb5-a06b-4e10-8cc7-785e0f0b298e.jpg "Warp World"
+[Scrambleverse]: https://img.scryfall.com/cards/large/front/2/b/2b61fa9d-3f69-4632-be0e-09924ca88501.jpg "Scrambleverse"
+[Dimensional Breach]: https://img.scryfall.com/cards/large/front/f/1/f18f2832-07c5-47be-8966-b250fb997f78.jpg "Dimensional Breach"
+[Cataclysm]: https://img.scryfall.com/cards/large/front/7/1/713160be-bcfd-4ef5-9457-c02b926ba06e.jpg "Cataclysm"
+[Crypt Ghast]: https://img.scryfall.com/cards/large/front/6/2/623c9804-42c4-4b69-bc39-f70d96929d07.jpg "Crypt Ghast"
+[Zendikar Resurgent]: https://img.scryfall.com/cards/large/front/3/3/33f64032-1e87-4d22-a211-c37e11ffa247.jpg "Zendikar Resurgent"
+[Caged Sun]: https://img.scryfall.com/cards/large/front/d/f/dfe6f9ec-3b7f-4c11-acd1-440e14217e5d.jpg "Caged Sun"
+[Extraplanar Lens]: https://img.scryfall.com/cards/large/front/6/2/622a6523-3b12-4657-a656-00a57a3ae59c.jpg "Extraplanar Lens"
+[Commander's Sphere]: https://img.scryfall.com/cards/large/front/8/b/8b991b05-60e4-49a6-9024-3465082d4932.jpg "Commander's Sphere"
+[Chromatic Lantern]: https://img.scryfall.com/cards/large/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg "Chromatic Lantern"
+[Coalition Relic]: https://img.scryfall.com/cards/large/front/7/3/73f27b75-d400-46fd-acec-6b55a1e801ee.jpg "Coalition Relic"
+[Rampant Growth]: https://img.scryfall.com/cards/large/front/a/9/a9dd8043-4099-42bb-9d54-4efc8b38fe18.jpg "Rampant Growth"
+[Cultivate]: https://img.scryfall.com/cards/large/front/8/3/83d1a3a2-4f2d-4f5f-9270-7c771d2c91b1.jpg "Cultivate"
+[Kodama's Reach]: https://img.scryfall.com/cards/large/front/1/0/102d20e6-5179-44b7-9abd-f1defc15ca6a.jpg "Kodama's Reach"
+[Explosive Vegetation]: https://img.scryfall.com/cards/large/front/6/d/6dc4351a-8cc9-4043-80b9-23794f576cbc.jpg "Explosive Vegetation"
+[Thran Dynamo]: https://img.scryfall.com/cards/large/front/5/0/508a8735-642c-4f22-bbd9-4a189d93e7b7.jpg "Thran Dynamo"
+[Charcoal Diamond]: https://img.scryfall.com/cards/large/front/e/a/ea9f9b9a-f5dc-47d5-8d01-baf79842ea65.jpg "Charcoal Diamond"
+[Sky Diamond]: https://img.scryfall.com/cards/large/front/6/1/61d27478-5a03-47a8-a185-8a0c9b4e0474.jpg "Sky Diamond"
+[Simic Signet]: https://img.scryfall.com/cards/large/front/1/2/12013400-21db-4a3b-9e4e-edbea7c8021f.jpg "Simic Signet"
+[Azorius Signet]: https://img.scryfall.com/cards/large/front/2/0/20daf226-12c3-460c-b66a-e447346076d2.jpg "Azorius Signet"
+[Mind Stone]: https://img.scryfall.com/cards/large/front/4/2/42bd038d-1005-4095-9310-108caa56465f.jpg "Mind Stone"
+[Hedron Archive]: https://img.scryfall.com/cards/large/front/6/4/64bff432-b85c-4764-82a7-6ae93c8bed45.jpg "Hedron Archive"
+[Dreamstone Hedron]: https://img.scryfall.com/cards/large/front/d/f/df32fd76-5f14-4000-beb1-4933d0675fbc.jpg "Dreamstone Hedron"
+[Sol Ring]: https://img.scryfall.com/cards/large/front/8/3/83a0f2eb-2f6d-4aaa-b7a9-ea06d5de7eca.jpg "Sol Ring"
+[Path to Exile]: https://img.scryfall.com/cards/large/front/3/0/30b68ec2-bdb8-46ab-a741-36259926fd6f.jpg "Path to Exile"
+[Swords to Plowshares]: https://img.scryfall.com/cards/large/front/6/f/6ff9af62-1895-465a-b1f3-61f0d8318958.jpg "Swords to Plowshares"
+[Rapid Hybridization]: https://img.scryfall.com/cards/large/front/9/1/917df0f5-af77-4e8a-af81-2f78a432b520.jpg "Rapid Hybridization"
+[Pongify]: https://img.scryfall.com/cards/large/front/7/2/726b3de5-f2c1-4a92-9039-f61ae9575839.jpg "Pongify"
+[Oblivion Ring]: https://img.scryfall.com/cards/large/front/4/2/42641602-ca1a-41b5-a333-71a58dde4474.jpg "Oblivion Ring"
+[Banishing Light]: https://img.scryfall.com/cards/large/front/e/4/e45da7c2-d869-4b51-956c-287d0b0d2df4.jpg "Banishing Light"
+[Vindicate]: https://img.scryfall.com/cards/large/front/1/6/1658f12b-8ac5-4d29-86d5-f20c4d5f7e48.jpg "Vindicate"
+[Anguished Unmaking]: https://img.scryfall.com/cards/large/front/9/0/90ced4fa-6509-4f7a-9da7-efc70de6f90c.jpg "Anguished Unmaking"
+[Violent Ultimatum]: https://img.scryfall.com/cards/large/front/7/e/7e6ac9ce-e163-426f-8fbd-5ee1ec177dc1.jpg "Violent Ultimatum"
+[Decimate]: https://img.scryfall.com/cards/large/front/6/5/6551db26-83e8-4256-822b-122c35ee6097.jpg "Decimate"
+[Crush Contraband]: https://img.scryfall.com/cards/large/front/1/3/13e162b3-2e5a-4235-a2a7-1c8e3e9f2c19.jpg "Crush Contraband"
+[Casualties of War]: https://img.scryfall.com/cards/large/front/0/8/08fc5e50-c6f7-41ec-815a-5667eefded78.jpg "Casualties of War"
+[Skullclamp]: https://img.scryfall.com/cards/large/front/a/b/ab56119b-1e13-44d4-b73b-991488c039f1.jpg "Skullclamp"
+[Greed]: https://img.scryfall.com/cards/large/front/c/3/c39d94fb-a092-4307-b99b-73fb97998cc2.jpg "Greed"
+[Wheel of Fortune]: https://img.scryfall.com/cards/large/front/4/a/4a7a420a-d924-422a-afd9-81a821ace048.jpg "Wheel of Fortune"
+[Opportunity]: https://img.scryfall.com/cards/large/front/c/f/cf01d4d9-c9e9-4826-a155-4527f9be758e.jpg "Opportunity"
+[Citadel Siege]: https://img.scryfall.com/cards/large/front/8/7/871fcb2a-136c-4efe-b5cd-bec102b02e4b.jpg "Citadel Siege"
+[Monastary Siege]: https://img.scryfall.com/cards/large/front/3/2/32d2a1ad-210c-444d-9cb7-b78b493db7ea.jpg "Monastary Siege"
+[Palace Siege]: https://img.scryfall.com/cards/large/front/d/a/da855bb6-adc2-484c-a084-83aff2b267f1.jpg "Palace Siege"
+[Outpost Siege]: https://img.scryfall.com/cards/large/front/b/9/b909b8bc-667b-4784-979f-093029b5a156.jpg "Outpost Siege"
+[Frontier Siege]: https://img.scryfall.com/cards/large/front/5/e/5e7ee5ff-eabc-4947-b5fe-2647c7e2eb82.jpg "Frontier Siege"
+[Lifecrafter's Bestiary]: https://img.scryfall.com/cards/large/front/7/4/7439a855-4041-4d14-8edf-6741a734e55d.jpg "Lifecrafter's Bestiary"
+[Deathreap Ritual]: https://img.scryfall.com/cards/large/front/8/c/8cad9fa8-833c-4d30-8928-2a6c6284cd0b.jpg "Deathreap Ritual"
+[Soul Warden]: https://img.scryfall.com/cards/large/front/d/9/d96266b3-a7cb-40ce-a328-ac13719fe5f0.jpg "Soul Warden"
+[Sensei's Divining Top]: https://img.scryfall.com/cards/large/front/4/a/4a08ca06-58db-4ce6-b490-be4bea8956a1.jpg "Sensei's Divining Top"
+[Wrath of God]: https://img.scryfall.com/cards/large/front/2/d/2d9b12cc-f616-4b52-91eb-a430e70f9251.jpg "Wrath of God"
+[Damnation]: https://img.scryfall.com/cards/large/front/7/9/795fdd00-5833-4732-bc73-0ebcd84aa330.jpg "Damnation"
+[Blasphemous Act]: https://img.scryfall.com/cards/large/front/a/0/a09bb94a-1e47-43e7-a7e8-627c10cf8c1f.jpg "Blasphemous Act"
+[Evacuation]: https://img.scryfall.com/cards/large/front/b/b/bbf5e27b-b1ab-470c-8204-146032e26b5b.jpg "Evacuation"
+[Austere Command]: https://img.scryfall.com/cards/large/front/b/e/bef16a71-5ed2-4f30-a844-c02a0754f679.jpg "Austere Command"
+[Merciless Eviction]: https://img.scryfall.com/cards/large/front/a/3/a3b9f5dd-3f2b-4071-a22b-0d4fa39fb64b.jpg "Merciless Eviction"
+[Back to Nature]: https://img.scryfall.com/cards/large/front/b/4/b49270b2-ba15-4268-adb3-16d09c09adee.jpg "Back to Nature"
+[Shatterstorm]: https://img.scryfall.com/cards/large/front/f/7/f7a1aa93-26d1-40b0-82d8-414f56a36337.jpg "Shatterstorm"
+[Counterspell]: https://img.scryfall.com/cards/large/front/0/b/0bd56820-a903-4118-bbef-3e091789482f.jpg "Counterspell"
+[Summary Dismissal]: https://img.scryfall.com/cards/large/front/0/b/0b75794d-3334-4b4d-9446-0a251dd3bd15.jpg "Summary Dismissal"
+[Cryptic Command]: https://img.scryfall.com/cards/large/front/3/0/30f6fca9-003b-4f6b-9d6e-1e88adda4155.jpg "Cryptic Command"
+[Draining Whelk]: https://img.scryfall.com/cards/large/front/c/5/c559d326-b97b-43d9-b7c9-c09e1a0e9db6.jpg "Draining Whelk"
+[Talrand, Sky Summoner]: https://img.scryfall.com/cards/large/front/8/3/83c74e76-c6ce-4107-8816-0be8c20d7617.jpg "Talrand, Sky Summoner"
+[Animar, Soul of Elements]: https://img.scryfall.com/cards/large/front/4/6/46407f28-39f6-43ca-b7aa-da5120215c49.jpg "Animar, Soul of Elements"
+[Rakdos, the Showstopper]: https://img.scryfall.com/cards/large/front/4/e/4e3c30c7-c52e-41a0-b7c2-21d39c05160b.jpg "Rakdos, the Showstopper"
+[Mana Tithe]: https://img.scryfall.com/cards/large/front/7/d/7d48d622-f397-4f31-b1a5-0c23f60aa71c.jpg "Mana Tithe"
+[Stifle]: https://img.scryfall.com/cards/large/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.jpg "Stifle"
+[Ricochet Trap]: https://img.scryfall.com/cards/large/front/5/d/5d782375-9192-4ed0-bd79-f3404e5a1b01.jpg "Ricochet Trap"
 
 [//]: # (website links)
 [Gatherer]: https://gatherer.wizards.com/Pages/Advanced.aspx "Gatherer"

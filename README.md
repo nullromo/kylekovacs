@@ -4,8 +4,8 @@ Did you know github has free website hosting? It's called put everything into ma
 
 ## Portfolio
 
-Descriptions, photos, and code relating to projects I have worked on.
+Descriptions, photos, and code relating to [projects](portfolio/) I have worked on.
 
 ## Blog
 
-Articles I have written.
+[Articles](blog/) I have written.

@@ -1,6 +1,6 @@
 # vimrcgit
 
-[This repo](https://github.com/nullromo/vimrcgit) contains the code, including the `.vimrc` file and the "installer" shell script.
+[This repo](https://github.com/nullromo/vimrcgit) contains the code, including the `.vimrc` file, the colorscheme file, and the "installer" shell script.
 
 ## Setup Instructions
 

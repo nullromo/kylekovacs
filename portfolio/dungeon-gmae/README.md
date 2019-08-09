@@ -4,7 +4,7 @@ Yes, you read that right. It's "Gmae."
 
 ## What is it?
 
-[Dungeon Gmae](https://github.com/nullromo/DungeonGmae) is an adventure game I wrote with Collin Dutter in high school. This was our very first attempt at creating a video game, and the result was... well, not bad for a first try.
+[Dungeon Gmae](https://github.com/nullromo/DungeonGmae) is an adventure game I wrote with Collin Dutter in high school. This was our very first attempt at creating a video game, and the result was... well, not bad for a first try. It even has sound!
 
 | Dungeon Gmae |
 |:-:|

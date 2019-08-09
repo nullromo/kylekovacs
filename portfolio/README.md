@@ -4,6 +4,7 @@ The files in this folder are descriptions of projects that I have worked on. Bro
 
 ## Projects
 
+- I built a 5-DOF master/slave [robot arm](robot-arm/).
 - [Dungeon Gmae](dungeon-gmae/), the first video game I made.
 - Template code for using [encoders with arduino](arduino-encoder/).
 - I used to use [a custom web-scraper](mythic-updater/) to notify me of news updates, before they implemented a "sort by newest"-like feature.

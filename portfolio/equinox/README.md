@@ -8,6 +8,7 @@ You control the **Equinox**, a sphere filled with **mass**. The more mass the Eq
 
 ![Title](http://i.imgur.com/B6cSOe6.png)
 ![Gameplay](http://i.imgur.com/unOjjlI.gif)
+_Keep in mind that the .gif is laggy, not the actual game._
 
 ## Thoughts
 

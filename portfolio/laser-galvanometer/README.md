@@ -39,6 +39,8 @@ This was my first experience with LabVIEW, and I thought it was going to be terr
 | **Star drawing** | **Star projection** |
 | ![Star][Star] | ![Star2][Star2] |
 
+## Videos
+
 Check out this [video](https://youtu.be/C9D14AHB2rQ) on Youtube, or look for it in this repo. There is also an [interface demo](https://youtu.be/PQFSFJuBIHo).
 
 

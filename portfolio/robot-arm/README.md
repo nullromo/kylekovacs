@@ -1,4 +1,4 @@
-# robot-arm
+# Robot Arm
 A custom master/slave robot arm with 5 degrees of freedom.
 
 ## What is this?

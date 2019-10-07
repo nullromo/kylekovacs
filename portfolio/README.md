@@ -16,3 +16,4 @@ The files in this folder are descriptions of projects that I have worked on. Bro
 - Another game I worked on is called [Islanders](islanders/).
 - I built a [quadcopter](quadcopter/) from scratch.
 - The [Bing Bong Belt](bing-bong-belt/) plays a xylophone according to a series of pegs on a belt.
+- I participated in the [FIRST Tech Challenge](ftc/) for two years.

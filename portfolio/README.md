@@ -13,3 +13,6 @@ The files in this folder are descriptions of projects that I have worked on. Bro
 - Template code for using [encoders with arduino](arduino-encoder/).
 - I used to use [a custom web-scraper](mythic-updater/) to notify me of news updates, before they implemented a "sort by newest"-like feature.
 - I keep [my .vimrc](vimrcgit/) and a vim colorscheme file in a git repo with a simple "installer" script.
+- Another game I worked on is called [Islanders](islanders/).
+- I built a [quadcopter](quadcopter/) from scratch.
+- The [Bing Bong Belt](bing-bong-belt/) plays a xylophone according to a series of pegs on a belt.

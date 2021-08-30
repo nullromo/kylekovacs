@@ -2,6 +2,8 @@
 
 An introduction to deckbuilding for the Magic: The Gathering (MTG) Commander format by Kyle Kovacs
 
+***NOTE**: Some minor details in this guide are slightly out of date. Stay tuned for updates in the near future.*
+
 ### How to use this guide
 
 This guide is meant for people who already know how to play Magic, but don't know anything about Commander. Throughout the guide, concepts will be introduced and explained, and any cards that are referenced will show up as images. By the end of the guide, you should have a pretty clear idea of what Commander is all about and how to build a deck. My recommendation is to read the entire guide before starting to build your deck, but if you can't wait, then following along will work as well.

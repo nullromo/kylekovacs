@@ -264,7 +264,7 @@ This one is a little easier. First let's redraw the circuit a little.
 
 ![2 Bit R-2R Case 3 Redrawn]
 
-We can reduct the bottom 2 parallel resistors to
+We can reduce the bottom 2 parallel resistors to
 $\frac{1}{\frac{1}{2R} + \frac{1}{2R}} = R$.
 
 ![2 Bit R-2R Case 3 Redrawn 2]

@@ -9,9 +9,9 @@ protocols we use are RS-232 and I2C. RS-232 is also referred to as "UART"
 
 -   **RS-232** consists of one transmit ("Tx") wire and one receive ("Rx") wire
     between two processors (usually the module and a PC). The PC's Rx line is
-    the module's Tx line, and the module's Rx line is the PC's Tx line. The The
-    two have agreed on a certain baud rate (usually 115200), which is measured
-    in bits per second. Each processor can send data on their Tx line at the
+    the module's Tx line, and the module's Rx line is the PC's Tx line. The two
+    have agreed on a certain baud rate (usually 115200), which is measured in
+    bits per second. Each processor can send data on their Tx line at the
     specified baud rate while also receiving data on their Rx line which they
     interpret at the specified baud rate.
 -   **I2C** consists of two wires that are shared between one controller and one

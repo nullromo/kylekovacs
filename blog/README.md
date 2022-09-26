@@ -9,4 +9,5 @@ directly or see below for brief descriptions.
     Magic: The Gathering.
 -   I wrote an [R-2R Circuit Tutorial](r-2r-ladder/) to explain how these
     circuits work.
+-   An explanation of how [TTL control](ttl-control/) works.
 -   An article explaining a silly [horse racing game](horse_racing/) with math.

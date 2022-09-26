@@ -100,7 +100,7 @@ Busy    _________________________________|            |___
     The data lines can be changing after time `c`, but they must be stable for
     at least 100μs after `b`.
 -   The time from `b` to `d` is the strobe pulse width. This is usually 1ms. If
-    the strobe pulses for less that this time, then the whole pulse is ignored.
+    the strobe pulses for less than this time, then the whole pulse is ignored.
     This prevents jitter on the strobe line from triggering a state change in
     the module.
 -   Time `d` is the state change time. This is the rising edge of `strobe` after
@@ -191,6 +191,9 @@ void onStrobeRisingEdge() {
         opticalSwitch->setChannel(ttlState, false);
         // advance to S4
         state = WAIT_10_MS;
+    } else if (state == WAITING_FOR_TIMER) {
+        // if the strobe rose "too early" then go back to S1
+        state = WAITING_FOR_FALLING_EDGE;
     }
 }
 ```

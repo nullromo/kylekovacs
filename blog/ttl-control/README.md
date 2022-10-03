@@ -1,4 +1,6 @@
-# What is TTL?
+# TTL Control for Optical Modules
+
+## What is TTL?
 
 TTL means "Transistor-Transistor Logic." "TTL control" refers to a control
 method for optical modules that uses static digital voltage signals as inputs.
@@ -37,7 +39,7 @@ With TTL, instead of separating bits by _time_, we separate them by _space_.
 What this means is that we have a separate wire for each bit and the states of
 those wires determine the data. There is an additional "strobe" line that acts
 like a clock — the data on all the lines gets read when the strobe signal is
-pulsed.
+activated.
 
 The diagrams below show what the wires look like for these three protocols.
 
@@ -58,78 +60,85 @@ RS-232 and I2C, we can send out any string of bytes over a data line. With TTL,
 we can choose the state of N bits, and then "apply" that state by pulsing the
 strobe.
 
-# TTL Specifics
+## TTL Specifics
 
 TTL is also usually associated with a "busy" signal which is an output from the
-module. After the strobe signal is pulsed, the module will read the data lines
-and take some action using the data. While it is taking that action, it will set
-its busy output to high in order to tell the controller that it is not ready to
-receive another strobe pulse. After the module is done with its action, it will
-set the busy signal back to low, indicating to the controller that it is ready
-for another strobe.
+module. When the strobe signal is brought low, the module will read the data
+lines. After the strobe signal is held low continuously for a specified amount
+of time, the module will take some action using the data. While it is taking
+that action, it will set its busy output to high in order to tell the controller
+that it is not ready to receive another strobe signal. After the module is done
+with its action, it will set the busy signal back to low, indicating to the
+controller that it is ready for another strobe.
 
-Below is a timing diagram for how the TTL signals must behave. Important moments
-are marked with letters, which are described below.
+Below is a timing diagram for how the TTL signals must behave. Important time
+sections are marked and are described below.
 
-```none
-                    a   b   c            d            e
-                    v   v   v            v            v
-        ________________                  ________________
-Strobe                  |________________|
-        _   _   __________________________________________
-D0       |_| |_|
-        ______
-D1            |___________________________________________
-          ___   __________________________________________
-D2      _|   |_|
-                                          ____________
-Busy    _________________________________|            |___
-                    ^   ^   ^            ^            ^
-                    a   b   c            d            e
-```
+![Timing Diagram](images/timing.svg)
 
--   `Strobe` is active low, meaning that the default state is high. A pulse is
-    measured starting with a falling edge and ending with a rising edge.
--   Time `b` is the falling edge of `strobe`. This represents the beginning of
-    the pulse and is the data capture moment. Whatever state the data lines are
-    in at this time is the state that the module will see.
--   The time between `a` and `b` is called the setup time. This is usually
-    100μs. The data lines can be changing before time `a`, but they must be
-    stable at least 100μs before `b`.
--   The time between `b` and `c` is called the hold time. This is usually 100μs.
-    The data lines can be changing after time `c`, but they must be stable for
-    at least 100μs after `b`.
--   The time from `b` to `d` is the strobe pulse width. This is usually 1ms. If
-    the strobe pulses for less than this time, then the whole pulse is ignored.
-    This prevents jitter on the strobe line from triggering a state change in
-    the module.
--   Time `d` is the state change time. This is the rising edge of `strobe` after
-    it has been low for at least the required strobe pulse width time. This is
-    when the module will actually take action on the new state data and set the
-    busy signal high.
--   From time `d` to time `e` is the busy time. This is usually 10ms, but it can
-    vary. After the busy time has elapsed, the module sets the busy signal back
-    to low.
+-   `Strobe` is active low, meaning that the default state is high. A strobe
+    activation is measured starting with a falling edge and ending after
+    <b>T<sub>strobe</sub></b> elapses while the strobe signal remains low.
+    -   The timing of the rising edge of `strobe` after
+        <b>T<sub>strobe</sub></b> is not important.
+    -   <b>T<sub>strobe</sub></b> is the strobe pulse width. If the strobe is
+        held low for less than this time, then the whole pulse is ignored. This
+        prevents jitter on the strobe line from triggering a state change in the
+        module.
+-   Data is captured on each falling edge of `strobe`. Whatever state the data
+    lines are in at this time is the state that the module will see.
+    -   The captured data is used <b>T<sub>strobe</sub></b> after the falling
+        edge.
+    -   <b>T<sub>su</sub></b> is called the setup time. The data lines must be
+        stable at least <b>T<sub>su</sub></b> before the falling edge of
+        `strobe`.
+    -   <b>T<sub>h</sub></b> is called the hold time. The data lines must be
+        stable at least <b>T<sub>h</sub></b> after the falling edge of `strobe`.
+-   <b>T<sub>strobe</sub></b> after the `strobe` falling edge is the state
+    change time. This is when the module will actually take action on the new
+    state data and set the busy signal high.
+    -   While the busy signal is high, the module is not ready to receive
+        another strobe activation. The busy signal will not be high for longer
+        than <b>T<sub>busy</sub></b>. After the busy time has elapsed, the
+        module sets the busy signal back to low.
+-   <b>T<sub>drive</sub></b> is how long the module takes to drive the optical
+    component to its new state.
+    -   After <b>T<sub>drive</sub></b> elapses, there will be a little extra
+        time before the optical output is stable. This is called
+        <b>T<sub>settle</sub></b>.
+    -   After <b>T<sub>drive</sub></b>, the module will wait a little bit of
+        time before it can safely assume that the optical output has settled.
+        This time is called <b>T<sub>safety</sub></b>, and it is based on the
+        worst-case scenario for the MEMS chip type used in the component.
 
-In summary, a valid TTL pulse follows these steps:
+Typical timing values:
+
+|                                    Time                                     |        Value         |
+| :-------------------------------------------------------------------------: | :------------------: |
+|                             T<sub>strobe</sub>                              |         1ms          |
+|                        T<sub>su</sub>, T<sub>h</sub>                        |        100μs         |
+| T<sub>busy</sub>, T<sub>drive</sub>, T<sub>settle</sub>, T<sub>safety</sub> | Depends on component |
+
+In summary, a valid TTL input follows these steps:
 
 1. `Strobe` is high, `busy` is low, and the data lines can change.
 1. The data lines stop changing.
 1. 100μs or more later, `strobe` goes low.
 1. 100μs or more later, the data lines can change again (not necessary).
-1. 1ms or more after `strobe` went low, `strobe` goes high and `busy` goes high.
-1. 10ms later, `busy` goes low.
+1. 1ms after `strobe` went low, the "command" is initiated. `Busy` goes high.
+1. `strobe` goes high at some point (not necessary).
+1. `Busy` goes low at some point, indicating that the operation is complete.
 
 If the data lines are changing within that 200μs window around the falling edge
 of `strobe`, it just means that there is no guarantee that the data will be
 captured correctly.
 
 If `strobe` falls low while `busy` is still high (likely because the controller
-tried to send another pulse before the module was ready), then that strobe pulse
-will be ignored and the system will not be ready until `strobe` has gone high
-again to get back to its initial state.
+tried to send another signal before the module was ready), then that strobe
+signal will be ignored and the system will not be ready until `strobe` has gone
+high again to get back to its initial state.
 
-# How to Implement TTL
+## How to Implement TTL
 
 ### State Machine
 
@@ -140,10 +149,11 @@ This state machine diagram describes the TTL protocol.
 Starting from S1, a `strobe` falling edge takes us to S2. On this transition, we
 reset the timer and capture the data from the GPIO data lines. From S2, one of
 two things can happen: either `strobe` goes high and we return to the beginning,
-or 1ms passes with strobe staying stable and low and we advance to S3. Once in
-S3, we are just waiting for `strobe` to go high again; When it does, we advance
-to S4. Finally after being in S4 for 10ms, we transition back to S1 and start
-over.
+or <b>T<sub>strobe</sub></b> elapses with `strobe` staying stable and low and we
+advance to S3. On this transition, we start driving the component and set the
+busy signal to high. Once in S3, we are just waiting for the driving to be done;
+When it is, we advance to S4. Finally after being in S4 for
+<b>T<sub>safety</sub></b>, we transition back to S1 and start over.
 
 ### Code
 
@@ -155,14 +165,17 @@ Let's define the states like this:
 ```c
 enum StrobeState
 {
-    WAITING_FOR_FALLING_EDGE = 0, // S1
-    WAITING_FOR_TIMER = 1,        // S2
-    WAITING_FOR_RISING_EDGE = 2,  // S3
-    WAIT_10_MS = 3,               // S4
+    WAIT_FOR_FALLING_EDGE = 0, // S1
+    WAIT_FOR_STROBE = 1,       // S2
+    DRIVING = 2,               // S3
+    WAIT_FOR_SAFETY = 3,       // S4
 };
 
+// timing constant
+#define T_SAFETY 6
+
 // current state machine state
-StrobeState state = WAITING_FOR_FALLING_EDGE;
+StrobeState state = WAIT_FOR_FALLING_EDGE;
 
 // captured data from the data pins
 uint8_t ttlState = 0;
@@ -172,7 +185,7 @@ uint8_t timerCount = 0;
 ```
 
 First, set up a 1ms timer. This timer will be used to count both the 1ms strobe
-pulse time and the 10ms busy time.
+pulse time and the 6ms busy time.
 
 Then, set up interrupts for the `strobe` signal on both the rising and falling
 edges.
@@ -183,23 +196,16 @@ Here is what needs to happen on a `strobe` rising edge:
 
 ```c
 void onStrobeRisingEdge() {
-    // if already in S2, the module needs to actually take its action
-    if (state == WAITING_FOR_RISING_EDGE) {
-        // set the busy pin high
-        HAL_GPIO_WritePin(BUSY_GPIO_Port, BUSY_Pin, GPIO_PIN_SET);
-        // actually set the channel
-        opticalSwitch->setChannel(ttlState, false);
-        // advance to S4
-        state = WAIT_10_MS;
-    } else if (state == WAITING_FOR_TIMER) {
-        // if the strobe rose "too early" then go back to S1
-        state = WAITING_FOR_FALLING_EDGE;
+    // if in S2, go back to S1
+    if (state == WAIT_FOR_STROBE) {
+        state = WAIT_FOR_FALLING_EDGE;
     }
 }
 ```
 
-In S2, actions need to be taken (setting the module state and raising the busy
-signal). Otherwise, nothing needs doing.
+In S2, a rising `strobe` means there was jitter on the strobe line and we need
+to just go back to the initial state. In any other state, we don't care about
+the rising `strobe`.
 
 #### Strobe Falling Edge
 
@@ -212,7 +218,7 @@ void onStrobeFallingEdge() {
         // reset HAL timer
         getHandle()->Instance->CNT = 0;
         // advance to S2
-        state = WAITING_FOR_TIMER;
+        state = WAIT_FOR_STROBE;
         // capture the data
         uint8_t d0 = HAL_GPIO_ReadPin(D0_GPIO_Port, D0_Pin);
         uint8_t d1 = HAL_GPIO_ReadPin(D1_GPIO_Port, D1_Pin);
@@ -222,9 +228,10 @@ void onStrobeFallingEdge() {
 }
 ```
 
-From S0, a falling edge means we need to reset the 1ms timer to 0 counts (so
-that the next time it fires will be 1ms from now) and capture the state of the
-data pins.
+From S0, a falling edge means we need to reset the <b>T<sub>strobe</sub></b>
+timer to 0 counts (so that the next time it fires will be 1ms from now) and
+capture the state of the data pins. In any other state, we don't care about a
+`strobe` falling edge.
 
 #### Timer Interrupt
 
@@ -234,39 +241,58 @@ time the 1ms timer's count elapses.
 ```c
 void timerAction() {
     // from S2, 1 timer action means 1ms passed, which means we advance to S3
-    if (state == WAITING_FOR_TIMER) {
-        state = WAITING_FOR_RISING_EDGE;
+    if (state == WAIT_FOR_STROBE) {
+        // set the busy pin high
+        HAL_GPIO_WritePin(BUSY_GPIO_Port, BUSY_Pin, GPIO_PIN_SET);
+        // actually set the channel
+        opticalSwitch->setChannel(ttlState, false);
+        // advance to S3
+        state = DRIVING;
     }
 
-    // from S4, this function must get called 10 times to advance back to S1
-    if (state == WAIT_10_MS) {
-        // if it has been 10ms, reset the timer count, lower the busy signal, and go to S1
-        if (timerCount > 9) {
+    // from S3, we should advance to S4 if the driving is complete
+    if (state == DRIVING) {
+        // check driving status (depends on module)
+        if (/*driving is done*/) {
+            state = WAIT_FOR_SAFETY;
+        }
+    }
+
+    // from S4, this function must get called 6 times to advance back to S1
+    if (state == WAIT_FOR_SAFETY) {
+        // if it has been 6ms, reset the timer count, lower the busy signal, and go to S1
+        if (timerCount > T_SAFETY - 1) {
             // go back to S1
-            state = WAITING_FOR_FALLING_EDGE;
+            state = WAIT_FOR_FALLING_EDGE
             // reset the timer count
             timerCount = 0;
             // set the busy pin low
             HAL_GPIO_WritePin(BUSY_GPIO_Port, BUSY_Pin, GPIO_PIN_RESET);
         } else {
-            // if it hasn't been 10ms yet, just increment the timer count
+            // if it hasn't been 6ms yet, just increment the timer count
             timerCount++;
         }
     }
 }
 ```
 
-As the timer is ticking, each call will increment `timerCount` until it
-reaches 10. At that point, the next timer interrupt will trigger the module to
+As the timer is ticking, each call will increment `timerCount` until it reaches
+`T_SAFETY`. At that point, the next timer interrupt will trigger the module to
 reset itself back to the initial state where it will be ready to receive another
 `strobe` falling edge interrupt.
+
+Note that with this particular example, the driving may finish 0.999ms before
+the next timer interrupt. In this case, the busy signal will remain high for
+"too long," but that's something we don't necessarily care about because the
+timing requirements are not so strict. To get tighter timing, we could increase
+the timer frequency and count up to higher values.
 
 ### Summary
 
 It should be fairly clear how the explanation of TTL maps onto the state machine
 diagram and how the 3 functions above implement the state machine correctly.
 
-# Why TTL?
+## Why TTL?
 
 "Because the customer wants it" is usually a good enough reason, but why would
 they want it? TTL is simple and easy to use. You don't have to worry about

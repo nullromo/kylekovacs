@@ -251,7 +251,7 @@ void timerAction() {
     }
 
     // from S3, we should advance to S4 if the driving is complete
-    if (state == DRIVING) {
+    else if (state == DRIVING) {
         // check driving status (depends on module)
         if (/*driving is done*/) {
             state = WAIT_FOR_SAFETY;
@@ -259,7 +259,7 @@ void timerAction() {
     }
 
     // from S4, this function must get called 6 times to advance back to S1
-    if (state == WAIT_FOR_SAFETY) {
+    else if (state == WAIT_FOR_SAFETY) {
         // if it has been 6ms, reset the timer count, lower the busy signal, and go to S1
         if (timerCount > T_SAFETY - 1) {
             // go back to S1

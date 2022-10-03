@@ -105,7 +105,7 @@ sections are marked and are described below.
     component to its new state.
     -   After <b>T<sub>drive</sub></b> elapses, there will be a little extra
         time before the optical output is stable. This is called
-        <b>T<sub>settle</sub></b>.
+        <b>T<sub>stable</sub></b>.
     -   After <b>T<sub>drive</sub></b>, the module will wait a little bit of
         time before it can safely assume that the optical output has settled.
         This time is called <b>T<sub>safety</sub></b>, and it is based on the
@@ -117,7 +117,7 @@ Typical timing values:
 | :-------------------------------------------------------------------------: | :------------------: |
 |                             T<sub>strobe</sub>                              |         1ms          |
 |                        T<sub>su</sub>, T<sub>h</sub>                        |        100μs         |
-| T<sub>busy</sub>, T<sub>drive</sub>, T<sub>settle</sub>, T<sub>safety</sub> | Depends on component |
+| T<sub>busy</sub>, T<sub>drive</sub>, T<sub>stable</sub>, T<sub>safety</sub> | Depends on component |
 
 In summary, a valid TTL input follows these steps:
 

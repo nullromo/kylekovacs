@@ -89,11 +89,12 @@ sections are marked and are described below.
     lines are in at this time is the state that the module will see.
     -   The captured data is used <b>T<sub>strobe</sub></b> after the falling
         edge.
-    -   <b>T<sub>su</sub></b> is called the setup time. The data lines must be
-        stable at least <b>T<sub>su</sub></b> before the falling edge of
+    -   <b>T<sub>setup</sub></b> is called the setup time. The data lines must
+        be stable at least <b>T<sub>setup</sub></b> before the falling edge of
         `strobe`.
-    -   <b>T<sub>h</sub></b> is called the hold time. The data lines must be
-        stable at least <b>T<sub>h</sub></b> after the falling edge of `strobe`.
+    -   <b>T<sub>hold</sub></b> is called the hold time. The data lines must be
+        stable at least <b>T<sub>hold</sub></b> after the falling edge of
+        `strobe`.
 -   <b>T<sub>strobe</sub></b> after the `strobe` falling edge is the state
     change time. This is when the module will actually take action on the new
     state data and set the busy signal high.
@@ -104,20 +105,30 @@ sections are marked and are described below.
 -   <b>T<sub>drive</sub></b> is how long the module takes to drive the optical
     component to its new state.
     -   After <b>T<sub>drive</sub></b> elapses, there will be a little extra
-        time before the optical output is stable. This is called
+        time before the optical output is stable. The sum of these is called
         <b>T<sub>stable</sub></b>.
     -   After <b>T<sub>drive</sub></b>, the module will wait a little bit of
         time before it can safely assume that the optical output has settled.
         This time is called <b>T<sub>safety</sub></b>, and it is based on the
         worst-case scenario for the MEMS chip type used in the component.
+    -   <b>T<sub>margin</sub></b> is the time after the output has stabilized,
+        but before the busy signal has been dropped low.
+-   <b>T<sub>switching</sub></b> is the total switching time for the module,
+    measured from the falling edge of `strobe` to the stabilization of the
+    output.
+-   <b>T<sub>ready</sub></b> is measured from the falling edge of `strobe` to
+    the falling edge of `busy`. This represents the amount of time that a user
+    must wait between commands.
 
 Typical timing values:
 
-|                                    Time                                     |        Value         |
-| :-------------------------------------------------------------------------: | :------------------: |
-|                             T<sub>strobe</sub>                              |         1ms          |
-|                        T<sub>su</sub>, T<sub>h</sub>                        |        100μs         |
-| T<sub>busy</sub>, T<sub>drive</sub>, T<sub>stable</sub>, T<sub>safety</sub> | Depends on component |
+|                                               Time                                                |        Value         |    Type     |
+| :-----------------------------------------------------------------------------------------------: | :------------------: | :---------: |
+|                                        T<sub>strobe</sub>                                         |         1ms          |    Fixed    |
+|                                T<sub>setup</sub>, T<sub>hold</sub>                                |        100μs         |    Fixed    |
+| T<sub>busy</sub>, T<sub>drive</sub>, T<sub>stable</sub>, T<sub>ready</sub>, T<sub>switching</sub> | Depends on component |   Maximum   |
+|                                        T<sub>safety</sub>                                         | Depends on component |    Fixed    |
+|                                        T<sub>margin</sub>                                         |        500μs         | Approximate |
 
 In summary, a valid TTL input follows these steps:
 

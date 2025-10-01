@@ -26,6 +26,8 @@ The deckbuilding rules are the following:
 - Some cards are banned. See [the banlist].
 - One card in the deck is designated as the **commander** of the deck
   - The commander must be a legendary creature, a legendary vehicle, or a legendary spacecraft with at least one power/toughness box. Additionally, some cards not in these categories specify that they can be your commander.
+  - Some cards have various kinds of "parner" abilities. These abilities allow you to have two commanders.
+- You may designate up to one card to be your companion if it has the Companion ability and the rest of your deck meets its companion requirements. If you have a companion, your deck will consist of 101 cards. You have no sideboard, but your companion still starts outside the game and otherwise functions normally as companions do.
 - All the non-commander cards in the deck must fall under the **color identity** of the commander.
   - Color identity is determined by the mana symbols on the card (in either the card's mana cost or its rules text) and the card's color indicator (if any). For example, the card Ancient Grudge is red, but its color identity is red and green. Hybrid mana symbols, like those seen in Dovescape count as both colors when determining the card's color and when determining its color identity. Hence, Dovescape is blue and white, and its color identity is blue and white.
 
@@ -45,28 +47,25 @@ In addition to the deckbuilding rules, there are some in-game rules specific to 
 
 The relevant game rules are the following:
 
-- Players start at 40 life
+- Players start at 40 life.
 - You may not have known it, but in every game of MTG there is a zone called the **command zone**. This is where commanders live at the start of the game, and it's where they normally return to when they die.
 
-  > Note, the command zone is also used for other things with which you may be familiar, such as planeswalker emblems and conspiracies.
+  > Note, the command zone is also used for other things with which you may be familiar, such as emblems and conspiracies.
 
 - You may cast your commander from the command zone as if it were in your hand.
-- Any time a commander you own would change zones, you may have it go to the command zone instead of whatever zone it would have gone to. This means, for example, that if your commander is on the battlefield and it is destroyed, you may put it in the command zone instead of in your graveyard. Likewise, if your commander is in your graveyard (perhaps because you chose not to return it to the command zone after it died) and it would be exiled, you may choose to return it to the command zone instead.
-
-  > Keep in mind that a commander that returns to the command zone when it is destroyed doesn't actually die. Since moving to the command zone is a replacement effect, the commander never enters the graveyard, and so never actually triggers any "whenever a creature dies..."-type abilities.
-
+- Any time a commander you own enters a revealed zone other than the battlefield, you may put it in the command zone. This means, for example, that if your commander is on the battlefield and dies, you may put it in the command zone from graveyard. Likewise, if your commander is in your graveyard (perhaps because you chose not to return it to the command zone after it died) and is exiled, you may choose to return it to the command zone from exile.
+- Any time a commander you own would enter a hidden zone, you may put it in the command zone instead. This mean, for example, that if you commander is on the battlefield and it would be shuffled into your library, you may return it to the command zone instead.
 - Every time you cast your commander from the command zone, it costs 2 more generic mana to cast for each time you have cast it from the command zone that game. This is often called the **commander tax**.
-- If a player is dealt 21 damage (over half their starting life total) by a single commander, that player loses the game as a state-based action.
+- If a player is dealt 21 combat damage (over half their starting life total) by a single commander, that player loses the game as a state-based action.
   - This so-called **commander damage** is tracked across the whole game, even if the damage-dealing commander leaves and re-enters the battlefield many times.
-  - Noncombat damage also counts as commander damage.
-- Each player gets 1 free mulligan (you can keep 7 cards after your first mulligan, then 6 after your second, etc.)
-- The player who goes first does not skip their first draw step
+- Each player gets 1 free mulligan (you can keep 7 cards after your first mulligan, then 6 after your second, etc.).
+- The player who goes first does not skip their first draw step.
 
-Commander is best played with 4 players at a time. If a player loses the game, all cards owned by that player cease to exist (from the game's perspective) and the game continues on with the remaining players. If a player wins the game, the game ends and all other players lose.
+Commander is best played with 4 players at a time. If a player loses the game, all cards owned by that player cease to exist (from the game's perspective) and the game continues on with the remaining players. If a player wins the game, the game ends and all other players lose. There can be more complex situations when players leave the game, but I won't go over those here.
 
 ### Why Commander?
 
-A big part of what makes the format fun is the in-game politics. Some games play out relatively evenly, while other games see one player gain an early advantage and get teamed up on. The fun of commander is that even though your deck has the same cards in it, no two games play out the same way. Often in formats like Standard, which has a very narrow metagame, matchups can be deterministic and the same matchup will often play out the same way. This does not mean that Standard is boring, but it's definitely a different feeling and Commander has such a wide variety of things going on that it never seems to get boring.
+A big part of what makes the format fun is the in-game politics. Some games play out relatively evenly, while other games see one player gain an early advantage and get teamed up on. The fun of commander is that even though your deck has the same cards in it, no two games play out the same way due to the large variance of four 100-card singleton decks. Often in formats like Standard, which has a very narrow metagame, matchups can be deterministic and the same matchup will often play out the same way. This does not mean that Standard is boring, but it's definitely a different feeling and Commander has such a wide variety of things going on that it never seems to get boring.
 
 > **History Note**: Commander is often called Elder Dragon Highlander (EDH). This is a reference to 2 things. First, when Commander was invented, the only legal commanders were the five Elder Dragons, pictured below. Second, the movie _Highlander_ popularaized the phrase "there can only be one," which refers here to the singleton nature of the format. Since all the Elder Dragons have 7 power, the commander damage rule was set at 21 to account for 3 hits from an Elder Dragon.
 >

@@ -2,7 +2,7 @@
 
 An introduction to deckbuilding for the Magic: The Gathering (MTG) Commander format by Kyle Kovacs
 
-***NOTE**: Some minor details in this guide are slightly out of date. Stay tuned for updates in the near future.*
+***NOTE**: Some details in this guide may be out of date. Please let me know if you see any mistakes!*
 
 ### How to use this guide
 
@@ -25,7 +25,7 @@ The deckbuilding rules are the following:
   - This rule does not apply to basic lands
 - Some cards are banned. See [the banlist].
 - One card in the deck is designated as the **commander** of the deck
-  - The commander must be a legendary creature
+  - The commander must be a legendary creature, a legendary vehicle, or a legendary spacecraft with at least one power/toughness box. Additionally, some cards not in these categories specify that they can be your commander.
 - All the non-commander cards in the deck must fall under the **color identity** of the commander.
   - Color identity is determined by the mana symbols on the card (in either the card's mana cost or its rules text) and the card's color indicator (if any). For example, the card Ancient Grudge is red, but its color identity is red and green. Hybrid mana symbols, like those seen in Dovescape count as both colors when determining the card's color and when determining its color identity. Hence, Dovescape is blue and white, and its color identity is blue and white.
 
@@ -37,7 +37,7 @@ The deckbuilding rules are the following:
 |-|-|-|
 | ![Ancient Grudge][Ancient Grudge] | ![Dovescape][Dovescape] | ![Blind Obedience][Blind Obedience] |
 
-Your commander is usually what gives your deck its flavor. Most decks are structured such that the cards all interact well with the abilities of the deck's commander. Later on in the guide, we will explore what this means and how it works.
+Your commander is usually what gives your deck its theme. Most decks are structured such that the cards all interact well with the abilities of the deck's commander. Later on in the guide, we will explore what this means and how it works.
 
 In addition to the deckbuilding rules, there are some in-game rules specific to Commander.
 

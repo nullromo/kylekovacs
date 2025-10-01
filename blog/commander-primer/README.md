@@ -23,10 +23,11 @@ The deckbuilding rules are the following:
 - Decks contain exactly 100 cards
 - Decks are singleton (each deck can only contain one copy of a given card)
   - This rule does not apply to basic lands
+- Some cards are banned. See [the banlist].
 - One card in the deck is designated as the **commander** of the deck
   - The commander must be a legendary creature
 - All the non-commander cards in the deck must fall under the **color identity** of the commander.
-  - Color identity is determined by the mana symbols on the card in either the card's cost or its rules text. For example, the card Ancient Grudge is red, but its color identity is red and green. Hybrid mana symbols, like those seen in Dovescape count as both colors when determining the card's color and when determining its color identity. Hence, Dovescape is blue and white, and its color identity is blue and white.
+  - Color identity is determined by the mana symbols on the card (in either the card's mana cost or its rules text) and the card's color indicator (if any). For example, the card Ancient Grudge is red, but its color identity is red and green. Hybrid mana symbols, like those seen in Dovescape count as both colors when determining the card's color and when determining its color identity. Hence, Dovescape is blue and white, and its color identity is blue and white.
 
     > Note that mana symbols in reminder text do not count as mana symbols in a card's rules text. Example: the _Extort_ mechanic, as seen in Blind Obedience does not change a card's color identity. Blind Obedience is white, and its color identity is white.
 

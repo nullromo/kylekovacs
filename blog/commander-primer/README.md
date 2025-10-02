@@ -34,10 +34,12 @@ The deckbuilding rules are the following:
     > Note that mana symbols in reminder text do not count as mana symbols in a card's rules text. Example: the _Extort_ mechanic, as seen in Blind Obedience does not change a card's color identity. Blind Obedience is white, and its color identity is white.
 
   - Of course, the cards in the deck do not have to exactly match the color identity of the commander. So if a deck's commander were blue, red, and black, then the deck could have cards that are just blue, cards that are red and black, cards that are just black, etc.
+  - When determining color identity, you must look at both faces of a double-faced card.
   
 | Ancient Grudge | Dovescape | Blind Obedience |
 |-|-|-|
 | ![Ancient Grudge][Ancient Grudge] | ![Dovescape][Dovescape] | ![Blind Obedience][Blind Obedience] |
+| Ancient Grudge is red, but its color identity is red and green | Dovescape is blue and white, and its color identity is blue and white | Blind Obedience is white, and its color identity is white |
 
 Your commander is usually what gives your deck its theme. Most decks are structured such that the cards all interact well with the abilities of the deck's commander. Later on in the guide, we will explore what this means and how it works.
 
@@ -576,9 +578,9 @@ I hope this guide was helpful. I hope you have a great time playing Commander an
 
 
 [//]: # (card images)
-[Ancient Grudge]: https://img.scryfall.com/cards/large/front/3/d/3d7313d3-e6fb-4e82-b558-5fcfd5b71177.jpg "Ancient Grudge is red, but its color identity is red and green"
-[Dovescape]: https://img.scryfall.com/cards/large/front/b/6/b6e3d6e6-ac17-4d73-acac-089442de4af6.jpg "Dovescape is blue and white, and its color identity is blue and white"
-[Blind Obedience]: https://img.scryfall.com/cards/large/front/7/7/77fccacf-a9b3-4290-9b83-24188e7c885b.jpg "Blind Obedience is white, and its color identity is white"
+[Ancient Grudge]: ./images/cards/ancient-grudge.jpg "Ancient Grudge is red, but its color identity is red and green"
+[Dovescape]: ./images/cards/dovescape.jpg "Dovescape is blue and white, and its color identity is blue and white"
+[Blind Obedience]: ./images/cards/blind-obedience.jpg "Blind Obedience is white, and its color identity is white"
 [Arcades Sabboth]: https://img.scryfall.com/cards/large/front/8/5/8520de8b-0d8d-465a-b112-342ecbbaffa6.jpg "The five Elder Dragons"
 [Chromium]: https://img.scryfall.com/cards/large/front/1/5/15ec5a20-4e8f-40b2-9abf-c0bf1cf816c3.jpg "The five Elder Dragons"
 [Nicol Bolas]: https://img.scryfall.com/cards/large/front/e/6/e683de3c-55fc-4b4c-a7ca-f0c7e67a9b0f.jpg "The five Elder Dragons"

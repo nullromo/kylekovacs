@@ -1087,32 +1087,22 @@ and I wish you the best of luck!
 [Blind Obedience]:
     ./images/cards/blind-obedience.jpg
     'Blind Obedience is white, and its color identity is white'
-[Arcades Sabboth]:
-    https://img.scryfall.com/cards/large/front/8/5/8520de8b-0d8d-465a-b112-342ecbbaffa6.jpg
-    'The five Elder Dragons'
-[Chromium]:
-    https://img.scryfall.com/cards/large/front/1/5/15ec5a20-4e8f-40b2-9abf-c0bf1cf816c3.jpg
-    'The five Elder Dragons'
-[Nicol Bolas]:
-    https://img.scryfall.com/cards/large/front/e/6/e683de3c-55fc-4b4c-a7ca-f0c7e67a9b0f.jpg
-    'The five Elder Dragons'
-[Vaevictis Asmadi]:
-    https://img.scryfall.com/cards/large/front/d/f/df01b548-9738-4c84-beb6-9a375f41d496.jpg
-    'The five Elder Dragons'
-[Palladia-Mors]:
-    https://img.scryfall.com/cards/large/front/e/d/ede0ce7a-0799-40b9-b725-665dc9c1cede.jpg
-    'The five Elder Dragons'
+[Arcades Sabboth]: ./images/cards/arcades-sabboth.jpg 'The five Elder Dragons'
+[Chromium]: ./images/cards/chromium.jpg 'The five Elder Dragons'
+[Nicol Bolas]: ./images/cards/nicol-bolas.jpg 'The five Elder Dragons'
+[Vaevictis Asmadi]: ./images/cards/vaevictis-asmadi.jpg 'The five Elder Dragons'
+[Palladia-Mors]: ./images/cards/palladia-mors.jpg 'The five Elder Dragons'
 [Ancestral Recall Beta]:
-    https://img.scryfall.com/cards/large/front/4/6/46b0a5c2-ac85-448e-9e87-12fc74fd4147.jpg
+    ./images/cards/ancestral-recall-old.jpg
     'Old wording of Ancestral Recall'
 [Ancestral Recall]:
-    https://img.scryfall.com/cards/large/front/9/6/961d3fd1-0ddc-47bf-8b7b-201b812da0f5.jpg
+    ./images/cards/ancestral-recall-new.jpg
     'New wording of Ancestral Recall'
 [Glasses of Urza Beta]:
-    https://img.scryfall.com/cards/large/front/e/b/eb6953fd-ee48-49dc-9c9c-bfb9a9dc06d0.jpg
+    ./images/cards/glasses-of-urza-old.jpg
     'Old printing of Glasses of Urza'
 [Glasses of Urza]:
-    https://img.scryfall.com/cards/large/front/4/b/4bd9f45f-30b3-4bff-9fd3-9a71137ac741.jpg
+    ./images/cards/glasses-of-urza-new.jpg
     'New printing of Glasses of Urza'
 [Command Tower]:
     https://img.scryfall.com/cards/large/front/6/d/6d28946e-a478-4e0b-b39b-ec0236ddc9a5.jpg

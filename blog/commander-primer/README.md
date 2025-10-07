@@ -1077,303 +1077,111 @@ remember that everyone is just there to have fun.
 I hope this guide was helpful. I hope you have a great time playing Commander
 and I wish you the best of luck!
 
+<!-- prettier-ignore -->
 [//]: # 'card images'
-[Ancient Grudge]:
-    ./images/cards/ancient-grudge.jpg
-    'Ancient Grudge is red, but its color identity is red and green'
-[Dovescape]:
-    ./images/cards/dovescape.jpg
-    'Dovescape is blue and white, and its color identity is blue and white'
-[Blind Obedience]:
-    ./images/cards/blind-obedience.jpg
-    'Blind Obedience is white, and its color identity is white'
+[Ancient Grudge]: ./images/cards/ancient-grudge.jpg 'Ancient Grudge is red, but its color identity is red and green'
+[Dovescape]: ./images/cards/dovescape.jpg 'Dovescape is blue and white, and its color identity is blue and white'
+[Blind Obedience]: ./images/cards/blind-obedience.jpg 'Blind Obedience is white, and its color identity is white'
 [Arcades Sabboth]: ./images/cards/arcades-sabboth.jpg 'The five Elder Dragons'
 [Chromium]: ./images/cards/chromium.jpg 'The five Elder Dragons'
 [Nicol Bolas]: ./images/cards/nicol-bolas.jpg 'The five Elder Dragons'
 [Vaevictis Asmadi]: ./images/cards/vaevictis-asmadi.jpg 'The five Elder Dragons'
 [Palladia-Mors]: ./images/cards/palladia-mors.jpg 'The five Elder Dragons'
-[Ancestral Recall Beta]:
-    ./images/cards/ancestral-recall-old.jpg
-    'Old wording of Ancestral Recall'
-[Ancestral Recall]:
-    ./images/cards/ancestral-recall-new.jpg
-    'New wording of Ancestral Recall'
-[Glasses of Urza Beta]:
-    ./images/cards/glasses-of-urza-old.jpg
-    'Old printing of Glasses of Urza'
-[Glasses of Urza]:
-    ./images/cards/glasses-of-urza-new.jpg
-    'New printing of Glasses of Urza'
-[Command Tower]:
-    https://img.scryfall.com/cards/large/front/6/d/6d28946e-a478-4e0b-b39b-ec0236ddc9a5.jpg
-    'Command Tower'
-[Gemstone Mine]:
-    https://img.scryfall.com/cards/large/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg
-    'Gemstone Mine'
-[Cascading Cataracts]:
-    https://img.scryfall.com/cards/large/front/7/7/778739db-4431-4e58-91de-d2619aeef3ce.jpg
-    'Cascading Cataracts'
-[Painted Bluffs]:
-    https://img.scryfall.com/cards/large/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg
-    'Painted Bluffs'
-[Barktooth Warbeard]:
-    https://img.scryfall.com/cards/large/front/b/f/bffbda3c-61c0-421d-a724-6bb9a7005c0f.jpg
-    'Barktooth Warbeard'
-[Gabriel Angelfire]:
-    https://img.scryfall.com/cards/large/front/2/e/2e349074-1402-44cf-be19-33a661cff3b6.jpg
-    'Gabriel Angelfire'
-[Gallowbraid]:
-    https://img.scryfall.com/cards/large/front/8/d/8df86192-6374-42ac-94bc-95e2e8284bd6.jpg
-    'Gallowbraid'
-[Sir Shandlar of Eberyn]:
-    https://img.scryfall.com/cards/large/front/2/a/2a92c419-8f1e-4604-824d-28b086b54216.jpg
-    'Sir Shandlar of Eberyn'
-[Uril, the Miststalker]:
-    https://img.scryfall.com/cards/large/front/1/1/11e22185-47d0-465b-8181-afe194af5cac.jpg
-    'Uril, the Miststalker'
-[Sliver Legion]:
-    https://img.scryfall.com/cards/large/front/8/b/8bd37a04-87b1-42ad-b3e2-f17cd8998f9d.jpg
-    'Sliver Legion'
-[Sram, Senior Edificer]:
-    https://img.scryfall.com/cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg
-    'Sram, Senior Edificer'
-[Island]:
-    https://img.scryfall.com/cards/large/front/6/9/695f7519-b011-4a86-9226-80c2d9747a42.jpg
-    'Island'
-[Elvish Spirit Guide]:
-    https://img.scryfall.com/cards/large/front/8/d/8d77623b-c0a2-41a1-ae88-9015814ebab5.jpg
-    'Elvish Spirit Guide'
-[Flash]:
-    https://img.scryfall.com/cards/large/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg
-    'Flash'
-[Protean Hulk]:
-    https://img.scryfall.com/cards/large/front/d/a/dac2252b-2eb4-458d-b838-860ce741a82d.jpg
-    'Protean Hulk'
-[Carrion Feeder]:
-    https://img.scryfall.com/cards/large/front/d/3/d3e33835-a293-4a1f-85d5-8ac22360ef35.jpg
-    'Carrion Feeder'
-[Karmic Guide]:
-    https://img.scryfall.com/cards/large/front/b/0/b0768971-88ed-4166-aede-209654878e53.jpg
-    'Karmic Guide'
-[Academy Rector]:
-    https://img.scryfall.com/cards/large/front/4/3/4367bc78-0912-4abd-8edd-bc792558d01a.jpg
-    'Academy Rector'
-[Grand Abolisher]:
-    https://img.scryfall.com/cards/large/front/b/4/b4c4f694-618a-43ed-8781-2a51a234ba8e.jpg
-    'Grand Abolisher'
-[Animate Dead]:
-    https://img.scryfall.com/cards/large/front/7/b/7b83536a-efa4-41f3-9424-75b0efc0aea5.jpg
-    'Animate Dead'
-[Sylvan Safekeeper]:
-    https://img.scryfall.com/cards/large/front/6/0/60d695b3-b02b-42c6-bf1b-9d97a8d82eae.jpg
-    'Sylvan Safekeeper'
-[Mikaeus, the Unhallowed]:
-    https://img.scryfall.com/cards/large/front/8/8/8879190f-d8ff-47ce-a5d8-6a481a67236a.jpg
-    'Mikaeus, the Unhallowed'
-[Walking Ballista]:
-    https://img.scryfall.com/cards/large/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg
-    'Walking Ballista'
-[Warp World]:
-    https://img.scryfall.com/cards/large/front/a/a/aa6e1fb5-a06b-4e10-8cc7-785e0f0b298e.jpg
-    'Warp World'
-[Scrambleverse]:
-    https://img.scryfall.com/cards/large/front/2/b/2b61fa9d-3f69-4632-be0e-09924ca88501.jpg
-    'Scrambleverse'
-[Dimensional Breach]:
-    https://img.scryfall.com/cards/large/front/f/1/f18f2832-07c5-47be-8966-b250fb997f78.jpg
-    'Dimensional Breach'
-[Cataclysm]:
-    https://img.scryfall.com/cards/large/front/7/1/713160be-bcfd-4ef5-9457-c02b926ba06e.jpg
-    'Cataclysm'
-[Crypt Ghast]:
-    https://img.scryfall.com/cards/large/front/6/2/623c9804-42c4-4b69-bc39-f70d96929d07.jpg
-    'Crypt Ghast'
-[Zendikar Resurgent]:
-    https://img.scryfall.com/cards/large/front/3/3/33f64032-1e87-4d22-a211-c37e11ffa247.jpg
-    'Zendikar Resurgent'
-[Caged Sun]:
-    https://img.scryfall.com/cards/large/front/d/f/dfe6f9ec-3b7f-4c11-acd1-440e14217e5d.jpg
-    'Caged Sun'
-[Extraplanar Lens]:
-    https://img.scryfall.com/cards/large/front/6/2/622a6523-3b12-4657-a656-00a57a3ae59c.jpg
-    'Extraplanar Lens'
-[Commander's Sphere]:
-    https://img.scryfall.com/cards/large/front/8/b/8b991b05-60e4-49a6-9024-3465082d4932.jpg
-    "Commander's Sphere"
-[Chromatic Lantern]:
-    https://img.scryfall.com/cards/large/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg
-    'Chromatic Lantern'
-[Coalition Relic]:
-    https://img.scryfall.com/cards/large/front/7/3/73f27b75-d400-46fd-acec-6b55a1e801ee.jpg
-    'Coalition Relic'
-[Rampant Growth]:
-    https://img.scryfall.com/cards/large/front/a/9/a9dd8043-4099-42bb-9d54-4efc8b38fe18.jpg
-    'Rampant Growth'
-[Cultivate]:
-    https://img.scryfall.com/cards/large/front/8/3/83d1a3a2-4f2d-4f5f-9270-7c771d2c91b1.jpg
-    'Cultivate'
-[Kodama's Reach]:
-    https://img.scryfall.com/cards/large/front/1/0/102d20e6-5179-44b7-9abd-f1defc15ca6a.jpg
-    "Kodama's Reach"
-[Explosive Vegetation]:
-    https://img.scryfall.com/cards/large/front/6/d/6dc4351a-8cc9-4043-80b9-23794f576cbc.jpg
-    'Explosive Vegetation'
-[Thran Dynamo]:
-    https://img.scryfall.com/cards/large/front/5/0/508a8735-642c-4f22-bbd9-4a189d93e7b7.jpg
-    'Thran Dynamo'
-[Charcoal Diamond]:
-    https://img.scryfall.com/cards/large/front/e/a/ea9f9b9a-f5dc-47d5-8d01-baf79842ea65.jpg
-    'Charcoal Diamond'
-[Sky Diamond]:
-    https://img.scryfall.com/cards/large/front/6/1/61d27478-5a03-47a8-a185-8a0c9b4e0474.jpg
-    'Sky Diamond'
-[Simic Signet]:
-    https://img.scryfall.com/cards/large/front/1/2/12013400-21db-4a3b-9e4e-edbea7c8021f.jpg
-    'Simic Signet'
-[Azorius Signet]:
-    https://img.scryfall.com/cards/large/front/2/0/20daf226-12c3-460c-b66a-e447346076d2.jpg
-    'Azorius Signet'
-[Mind Stone]:
-    https://img.scryfall.com/cards/large/front/4/2/42bd038d-1005-4095-9310-108caa56465f.jpg
-    'Mind Stone'
-[Hedron Archive]:
-    https://img.scryfall.com/cards/large/front/6/4/64bff432-b85c-4764-82a7-6ae93c8bed45.jpg
-    'Hedron Archive'
-[Dreamstone Hedron]:
-    https://img.scryfall.com/cards/large/front/d/f/df32fd76-5f14-4000-beb1-4933d0675fbc.jpg
-    'Dreamstone Hedron'
-[Sol Ring]:
-    https://img.scryfall.com/cards/large/front/8/3/83a0f2eb-2f6d-4aaa-b7a9-ea06d5de7eca.jpg
-    'Sol Ring'
-[Path to Exile]:
-    https://img.scryfall.com/cards/large/front/3/0/30b68ec2-bdb8-46ab-a741-36259926fd6f.jpg
-    'Path to Exile'
-[Swords to Plowshares]:
-    https://img.scryfall.com/cards/large/front/6/f/6ff9af62-1895-465a-b1f3-61f0d8318958.jpg
-    'Swords to Plowshares'
-[Rapid Hybridization]:
-    https://img.scryfall.com/cards/large/front/9/1/917df0f5-af77-4e8a-af81-2f78a432b520.jpg
-    'Rapid Hybridization'
-[Pongify]:
-    https://img.scryfall.com/cards/large/front/7/2/726b3de5-f2c1-4a92-9039-f61ae9575839.jpg
-    'Pongify'
-[Oblivion Ring]:
-    https://img.scryfall.com/cards/large/front/4/2/42641602-ca1a-41b5-a333-71a58dde4474.jpg
-    'Oblivion Ring'
-[Banishing Light]:
-    https://img.scryfall.com/cards/large/front/e/4/e45da7c2-d869-4b51-956c-287d0b0d2df4.jpg
-    'Banishing Light'
-[Vindicate]:
-    https://img.scryfall.com/cards/large/front/1/6/1658f12b-8ac5-4d29-86d5-f20c4d5f7e48.jpg
-    'Vindicate'
-[Anguished Unmaking]:
-    https://img.scryfall.com/cards/large/front/9/0/90ced4fa-6509-4f7a-9da7-efc70de6f90c.jpg
-    'Anguished Unmaking'
-[Violent Ultimatum]:
-    https://img.scryfall.com/cards/large/front/7/e/7e6ac9ce-e163-426f-8fbd-5ee1ec177dc1.jpg
-    'Violent Ultimatum'
-[Decimate]:
-    https://img.scryfall.com/cards/large/front/6/5/6551db26-83e8-4256-822b-122c35ee6097.jpg
-    'Decimate'
-[Crush Contraband]:
-    https://img.scryfall.com/cards/large/front/1/3/13e162b3-2e5a-4235-a2a7-1c8e3e9f2c19.jpg
-    'Crush Contraband'
-[Casualties of War]:
-    https://img.scryfall.com/cards/large/front/0/8/08fc5e50-c6f7-41ec-815a-5667eefded78.jpg
-    'Casualties of War'
-[Skullclamp]:
-    https://img.scryfall.com/cards/large/front/a/b/ab56119b-1e13-44d4-b73b-991488c039f1.jpg
-    'Skullclamp'
-[Greed]:
-    https://img.scryfall.com/cards/large/front/c/3/c39d94fb-a092-4307-b99b-73fb97998cc2.jpg
-    'Greed'
-[Wheel of Fortune]:
-    https://img.scryfall.com/cards/large/front/4/a/4a7a420a-d924-422a-afd9-81a821ace048.jpg
-    'Wheel of Fortune'
-[Opportunity]:
-    https://img.scryfall.com/cards/large/front/c/f/cf01d4d9-c9e9-4826-a155-4527f9be758e.jpg
-    'Opportunity'
-[Citadel Siege]:
-    https://img.scryfall.com/cards/large/front/8/7/871fcb2a-136c-4efe-b5cd-bec102b02e4b.jpg
-    'Citadel Siege'
-[Monastary Siege]:
-    https://img.scryfall.com/cards/large/front/3/2/32d2a1ad-210c-444d-9cb7-b78b493db7ea.jpg
-    'Monastary Siege'
-[Palace Siege]:
-    https://img.scryfall.com/cards/large/front/d/a/da855bb6-adc2-484c-a084-83aff2b267f1.jpg
-    'Palace Siege'
-[Outpost Siege]:
-    https://img.scryfall.com/cards/large/front/b/9/b909b8bc-667b-4784-979f-093029b5a156.jpg
-    'Outpost Siege'
-[Frontier Siege]:
-    https://img.scryfall.com/cards/large/front/5/e/5e7ee5ff-eabc-4947-b5fe-2647c7e2eb82.jpg
-    'Frontier Siege'
-[Lifecrafter's Bestiary]:
-    https://img.scryfall.com/cards/large/front/7/4/7439a855-4041-4d14-8edf-6741a734e55d.jpg
-    "Lifecrafter's Bestiary"
-[Deathreap Ritual]:
-    https://img.scryfall.com/cards/large/front/8/c/8cad9fa8-833c-4d30-8928-2a6c6284cd0b.jpg
-    'Deathreap Ritual'
-[Soul Warden]:
-    https://img.scryfall.com/cards/large/front/d/9/d96266b3-a7cb-40ce-a328-ac13719fe5f0.jpg
-    'Soul Warden'
-[Sensei's Divining Top]:
-    https://img.scryfall.com/cards/large/front/4/a/4a08ca06-58db-4ce6-b490-be4bea8956a1.jpg
-    "Sensei's Divining Top"
-[Wrath of God]:
-    https://img.scryfall.com/cards/large/front/2/d/2d9b12cc-f616-4b52-91eb-a430e70f9251.jpg
-    'Wrath of God'
-[Damnation]:
-    https://img.scryfall.com/cards/large/front/7/9/795fdd00-5833-4732-bc73-0ebcd84aa330.jpg
-    'Damnation'
-[Blasphemous Act]:
-    https://img.scryfall.com/cards/large/front/a/0/a09bb94a-1e47-43e7-a7e8-627c10cf8c1f.jpg
-    'Blasphemous Act'
-[Evacuation]:
-    https://img.scryfall.com/cards/large/front/b/b/bbf5e27b-b1ab-470c-8204-146032e26b5b.jpg
-    'Evacuation'
-[Austere Command]:
-    https://img.scryfall.com/cards/large/front/b/e/bef16a71-5ed2-4f30-a844-c02a0754f679.jpg
-    'Austere Command'
-[Merciless Eviction]:
-    https://img.scryfall.com/cards/large/front/a/3/a3b9f5dd-3f2b-4071-a22b-0d4fa39fb64b.jpg
-    'Merciless Eviction'
-[Back to Nature]:
-    https://img.scryfall.com/cards/large/front/b/4/b49270b2-ba15-4268-adb3-16d09c09adee.jpg
-    'Back to Nature'
-[Shatterstorm]:
-    https://img.scryfall.com/cards/large/front/f/7/f7a1aa93-26d1-40b0-82d8-414f56a36337.jpg
-    'Shatterstorm'
-[Counterspell]:
-    https://img.scryfall.com/cards/large/front/0/b/0bd56820-a903-4118-bbef-3e091789482f.jpg
-    'Counterspell'
-[Summary Dismissal]:
-    https://img.scryfall.com/cards/large/front/0/b/0b75794d-3334-4b4d-9446-0a251dd3bd15.jpg
-    'Summary Dismissal'
-[Cryptic Command]:
-    https://img.scryfall.com/cards/large/front/3/0/30f6fca9-003b-4f6b-9d6e-1e88adda4155.jpg
-    'Cryptic Command'
-[Draining Whelk]:
-    https://img.scryfall.com/cards/large/front/c/5/c559d326-b97b-43d9-b7c9-c09e1a0e9db6.jpg
-    'Draining Whelk'
-[Talrand, Sky Summoner]:
-    https://img.scryfall.com/cards/large/front/8/3/83c74e76-c6ce-4107-8816-0be8c20d7617.jpg
-    'Talrand, Sky Summoner'
-[Animar, Soul of Elements]:
-    https://img.scryfall.com/cards/large/front/4/6/46407f28-39f6-43ca-b7aa-da5120215c49.jpg
-    'Animar, Soul of Elements'
-[Rakdos, the Showstopper]:
-    https://img.scryfall.com/cards/large/front/4/e/4e3c30c7-c52e-41a0-b7c2-21d39c05160b.jpg
-    'Rakdos, the Showstopper'
-[Mana Tithe]:
-    https://img.scryfall.com/cards/large/front/7/d/7d48d622-f397-4f31-b1a5-0c23f60aa71c.jpg
-    'Mana Tithe'
-[Stifle]:
-    https://img.scryfall.com/cards/large/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.jpg
-    'Stifle'
-[Ricochet Trap]:
-    https://img.scryfall.com/cards/large/front/5/d/5d782375-9192-4ed0-bd79-f3404e5a1b01.jpg
-    'Ricochet Trap'
+[Ancestral Recall Beta]: ./images/cards/ancestral-recall-old.jpg 'Old wording of Ancestral Recall'
+[Ancestral Recall]: ./images/cards/ancestral-recall-new.jpg 'New wording of Ancestral Recall'
+[Glasses of Urza Beta]: ./images/cards/glasses-of-urza-old.jpg 'Old printing of Glasses of Urza'
+[Glasses of Urza]: ./images/cards/glasses-of-urza-new.jpg 'New printing of Glasses of Urza'
+[Command Tower]: https://img.scryfall.com/cards/large/front/6/d/6d28946e-a478-4e0b-b39b-ec0236ddc9a5.jpg 'Command Tower'
+[Gemstone Mine]: https://img.scryfall.com/cards/large/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg 'Gemstone Mine'
+[Cascading Cataracts]: https://img.scryfall.com/cards/large/front/7/7/778739db-4431-4e58-91de-d2619aeef3ce.jpg 'Cascading Cataracts'
+[Painted Bluffs]: https://img.scryfall.com/cards/large/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg 'Painted Bluffs'
+[Barktooth Warbeard]: https://img.scryfall.com/cards/large/front/b/f/bffbda3c-61c0-421d-a724-6bb9a7005c0f.jpg 'Barktooth Warbeard'
+[Gabriel Angelfire]: https://img.scryfall.com/cards/large/front/2/e/2e349074-1402-44cf-be19-33a661cff3b6.jpg 'Gabriel Angelfire'
+[Gallowbraid]: https://img.scryfall.com/cards/large/front/8/d/8df86192-6374-42ac-94bc-95e2e8284bd6.jpg 'Gallowbraid'
+[Sir Shandlar of Eberyn]: https://img.scryfall.com/cards/large/front/2/a/2a92c419-8f1e-4604-824d-28b086b54216.jpg 'Sir Shandlar of Eberyn'
+[Uril, the Miststalker]: https://img.scryfall.com/cards/large/front/1/1/11e22185-47d0-465b-8181-afe194af5cac.jpg 'Uril, the Miststalker'
+[Sliver Legion]: https://img.scryfall.com/cards/large/front/8/b/8bd37a04-87b1-42ad-b3e2-f17cd8998f9d.jpg 'Sliver Legion'
+[Sram, Senior Edificer]: https://img.scryfall.com/cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg 'Sram, Senior Edificer'
+[Island]: https://img.scryfall.com/cards/large/front/6/9/695f7519-b011-4a86-9226-80c2d9747a42.jpg 'Island'
+[Elvish Spirit Guide]: https://img.scryfall.com/cards/large/front/8/d/8d77623b-c0a2-41a1-ae88-9015814ebab5.jpg 'Elvish Spirit Guide'
+[Flash]: https://img.scryfall.com/cards/large/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg 'Flash'
+[Protean Hulk]: https://img.scryfall.com/cards/large/front/d/a/dac2252b-2eb4-458d-b838-860ce741a82d.jpg 'Protean Hulk'
+[Carrion Feeder]: https://img.scryfall.com/cards/large/front/d/3/d3e33835-a293-4a1f-85d5-8ac22360ef35.jpg 'Carrion Feeder'
+[Karmic Guide]: https://img.scryfall.com/cards/large/front/b/0/b0768971-88ed-4166-aede-209654878e53.jpg 'Karmic Guide'
+[Academy Rector]: https://img.scryfall.com/cards/large/front/4/3/4367bc78-0912-4abd-8edd-bc792558d01a.jpg 'Academy Rector'
+[Grand Abolisher]: https://img.scryfall.com/cards/large/front/b/4/b4c4f694-618a-43ed-8781-2a51a234ba8e.jpg 'Grand Abolisher'
+[Animate Dead]: https://img.scryfall.com/cards/large/front/7/b/7b83536a-efa4-41f3-9424-75b0efc0aea5.jpg 'Animate Dead'
+[Sylvan Safekeeper]: https://img.scryfall.com/cards/large/front/6/0/60d695b3-b02b-42c6-bf1b-9d97a8d82eae.jpg 'Sylvan Safekeeper'
+[Mikaeus, the Unhallowed]: https://img.scryfall.com/cards/large/front/8/8/8879190f-d8ff-47ce-a5d8-6a481a67236a.jpg 'Mikaeus, the Unhallowed'
+[Walking Ballista]: https://img.scryfall.com/cards/large/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.jpg 'Walking Ballista'
+[Warp World]: https://img.scryfall.com/cards/large/front/a/a/aa6e1fb5-a06b-4e10-8cc7-785e0f0b298e.jpg 'Warp World'
+[Scrambleverse]: https://img.scryfall.com/cards/large/front/2/b/2b61fa9d-3f69-4632-be0e-09924ca88501.jpg 'Scrambleverse'
+[Dimensional Breach]: https://img.scryfall.com/cards/large/front/f/1/f18f2832-07c5-47be-8966-b250fb997f78.jpg 'Dimensional Breach'
+[Cataclysm]: https://img.scryfall.com/cards/large/front/7/1/713160be-bcfd-4ef5-9457-c02b926ba06e.jpg 'Cataclysm'
+[Crypt Ghast]: https://img.scryfall.com/cards/large/front/6/2/623c9804-42c4-4b69-bc39-f70d96929d07.jpg 'Crypt Ghast'
+[Zendikar Resurgent]: https://img.scryfall.com/cards/large/front/3/3/33f64032-1e87-4d22-a211-c37e11ffa247.jpg 'Zendikar Resurgent'
+[Caged Sun]: https://img.scryfall.com/cards/large/front/d/f/dfe6f9ec-3b7f-4c11-acd1-440e14217e5d.jpg 'Caged Sun'
+[Extraplanar Lens]: https://img.scryfall.com/cards/large/front/6/2/622a6523-3b12-4657-a656-00a57a3ae59c.jpg 'Extraplanar Lens'
+[Commander's Sphere]: https://img.scryfall.com/cards/large/front/8/b/8b991b05-60e4-49a6-9024-3465082d4932.jpg "Commander's Sphere"
+[Chromatic Lantern]: https://img.scryfall.com/cards/large/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg 'Chromatic Lantern'
+[Coalition Relic]: https://img.scryfall.com/cards/large/front/7/3/73f27b75-d400-46fd-acec-6b55a1e801ee.jpg 'Coalition Relic'
+[Rampant Growth]: https://img.scryfall.com/cards/large/front/a/9/a9dd8043-4099-42bb-9d54-4efc8b38fe18.jpg 'Rampant Growth'
+[Cultivate]: https://img.scryfall.com/cards/large/front/8/3/83d1a3a2-4f2d-4f5f-9270-7c771d2c91b1.jpg 'Cultivate'
+[Kodama's Reach]: https://img.scryfall.com/cards/large/front/1/0/102d20e6-5179-44b7-9abd-f1defc15ca6a.jpg "Kodama's Reach"
+[Explosive Vegetation]: https://img.scryfall.com/cards/large/front/6/d/6dc4351a-8cc9-4043-80b9-23794f576cbc.jpg 'Explosive Vegetation'
+[Thran Dynamo]: https://img.scryfall.com/cards/large/front/5/0/508a8735-642c-4f22-bbd9-4a189d93e7b7.jpg 'Thran Dynamo'
+[Charcoal Diamond]: https://img.scryfall.com/cards/large/front/e/a/ea9f9b9a-f5dc-47d5-8d01-baf79842ea65.jpg 'Charcoal Diamond'
+[Sky Diamond]: https://img.scryfall.com/cards/large/front/6/1/61d27478-5a03-47a8-a185-8a0c9b4e0474.jpg 'Sky Diamond'
+[Simic Signet]: https://img.scryfall.com/cards/large/front/1/2/12013400-21db-4a3b-9e4e-edbea7c8021f.jpg 'Simic Signet'
+[Azorius Signet]: https://img.scryfall.com/cards/large/front/2/0/20daf226-12c3-460c-b66a-e447346076d2.jpg 'Azorius Signet'
+[Mind Stone]: https://img.scryfall.com/cards/large/front/4/2/42bd038d-1005-4095-9310-108caa56465f.jpg 'Mind Stone'
+[Hedron Archive]: https://img.scryfall.com/cards/large/front/6/4/64bff432-b85c-4764-82a7-6ae93c8bed45.jpg 'Hedron Archive'
+[Dreamstone Hedron]: https://img.scryfall.com/cards/large/front/d/f/df32fd76-5f14-4000-beb1-4933d0675fbc.jpg 'Dreamstone Hedron'
+[Sol Ring]: https://img.scryfall.com/cards/large/front/8/3/83a0f2eb-2f6d-4aaa-b7a9-ea06d5de7eca.jpg 'Sol Ring'
+[Path to Exile]: https://img.scryfall.com/cards/large/front/3/0/30b68ec2-bdb8-46ab-a741-36259926fd6f.jpg 'Path to Exile'
+[Swords to Plowshares]: https://img.scryfall.com/cards/large/front/6/f/6ff9af62-1895-465a-b1f3-61f0d8318958.jpg 'Swords to Plowshares'
+[Rapid Hybridization]: https://img.scryfall.com/cards/large/front/9/1/917df0f5-af77-4e8a-af81-2f78a432b520.jpg 'Rapid Hybridization'
+[Pongify]: https://img.scryfall.com/cards/large/front/7/2/726b3de5-f2c1-4a92-9039-f61ae9575839.jpg 'Pongify'
+[Oblivion Ring]: https://img.scryfall.com/cards/large/front/4/2/42641602-ca1a-41b5-a333-71a58dde4474.jpg 'Oblivion Ring'
+[Banishing Light]: https://img.scryfall.com/cards/large/front/e/4/e45da7c2-d869-4b51-956c-287d0b0d2df4.jpg 'Banishing Light'
+[Vindicate]: https://img.scryfall.com/cards/large/front/1/6/1658f12b-8ac5-4d29-86d5-f20c4d5f7e48.jpg 'Vindicate'
+[Anguished Unmaking]: https://img.scryfall.com/cards/large/front/9/0/90ced4fa-6509-4f7a-9da7-efc70de6f90c.jpg 'Anguished Unmaking'
+[Violent Ultimatum]: https://img.scryfall.com/cards/large/front/7/e/7e6ac9ce-e163-426f-8fbd-5ee1ec177dc1.jpg 'Violent Ultimatum'
+[Decimate]: https://img.scryfall.com/cards/large/front/6/5/6551db26-83e8-4256-822b-122c35ee6097.jpg 'Decimate'
+[Crush Contraband]: https://img.scryfall.com/cards/large/front/1/3/13e162b3-2e5a-4235-a2a7-1c8e3e9f2c19.jpg 'Crush Contraband'
+[Casualties of War]: https://img.scryfall.com/cards/large/front/0/8/08fc5e50-c6f7-41ec-815a-5667eefded78.jpg 'Casualties of War'
+[Skullclamp]: https://img.scryfall.com/cards/large/front/a/b/ab56119b-1e13-44d4-b73b-991488c039f1.jpg 'Skullclamp'
+[Greed]: https://img.scryfall.com/cards/large/front/c/3/c39d94fb-a092-4307-b99b-73fb97998cc2.jpg 'Greed'
+[Wheel of Fortune]: https://img.scryfall.com/cards/large/front/4/a/4a7a420a-d924-422a-afd9-81a821ace048.jpg 'Wheel of Fortune'
+[Opportunity]: https://img.scryfall.com/cards/large/front/c/f/cf01d4d9-c9e9-4826-a155-4527f9be758e.jpg 'Opportunity'
+[Citadel Siege]: https://img.scryfall.com/cards/large/front/8/7/871fcb2a-136c-4efe-b5cd-bec102b02e4b.jpg 'Citadel Siege'
+[Monastary Siege]: https://img.scryfall.com/cards/large/front/3/2/32d2a1ad-210c-444d-9cb7-b78b493db7ea.jpg 'Monastary Siege'
+[Palace Siege]: https://img.scryfall.com/cards/large/front/d/a/da855bb6-adc2-484c-a084-83aff2b267f1.jpg 'Palace Siege'
+[Outpost Siege]: https://img.scryfall.com/cards/large/front/b/9/b909b8bc-667b-4784-979f-093029b5a156.jpg 'Outpost Siege'
+[Frontier Siege]: https://img.scryfall.com/cards/large/front/5/e/5e7ee5ff-eabc-4947-b5fe-2647c7e2eb82.jpg 'Frontier Siege'
+[Lifecrafter's Bestiary]: https://img.scryfall.com/cards/large/front/7/4/7439a855-4041-4d14-8edf-6741a734e55d.jpg "Lifecrafter's Bestiary"
+[Deathreap Ritual]: https://img.scryfall.com/cards/large/front/8/c/8cad9fa8-833c-4d30-8928-2a6c6284cd0b.jpg 'Deathreap Ritual'
+[Soul Warden]: https://img.scryfall.com/cards/large/front/d/9/d96266b3-a7cb-40ce-a328-ac13719fe5f0.jpg 'Soul Warden'
+[Sensei's Divining Top]: https://img.scryfall.com/cards/large/front/4/a/4a08ca06-58db-4ce6-b490-be4bea8956a1.jpg "Sensei's Divining Top"
+[Wrath of God]: https://img.scryfall.com/cards/large/front/2/d/2d9b12cc-f616-4b52-91eb-a430e70f9251.jpg 'Wrath of God'
+[Damnation]: https://img.scryfall.com/cards/large/front/7/9/795fdd00-5833-4732-bc73-0ebcd84aa330.jpg 'Damnation'
+[Blasphemous Act]: https://img.scryfall.com/cards/large/front/a/0/a09bb94a-1e47-43e7-a7e8-627c10cf8c1f.jpg 'Blasphemous Act'
+[Evacuation]: https://img.scryfall.com/cards/large/front/b/b/bbf5e27b-b1ab-470c-8204-146032e26b5b.jpg 'Evacuation'
+[Austere Command]: https://img.scryfall.com/cards/large/front/b/e/bef16a71-5ed2-4f30-a844-c02a0754f679.jpg 'Austere Command'
+[Merciless Eviction]: https://img.scryfall.com/cards/large/front/a/3/a3b9f5dd-3f2b-4071-a22b-0d4fa39fb64b.jpg 'Merciless Eviction'
+[Back to Nature]: https://img.scryfall.com/cards/large/front/b/4/b49270b2-ba15-4268-adb3-16d09c09adee.jpg 'Back to Nature'
+[Shatterstorm]: https://img.scryfall.com/cards/large/front/f/7/f7a1aa93-26d1-40b0-82d8-414f56a36337.jpg 'Shatterstorm'
+[Counterspell]: https://img.scryfall.com/cards/large/front/0/b/0bd56820-a903-4118-bbef-3e091789482f.jpg 'Counterspell'
+[Summary Dismissal]: https://img.scryfall.com/cards/large/front/0/b/0b75794d-3334-4b4d-9446-0a251dd3bd15.jpg 'Summary Dismissal'
+[Cryptic Command]: https://img.scryfall.com/cards/large/front/3/0/30f6fca9-003b-4f6b-9d6e-1e88adda4155.jpg 'Cryptic Command'
+[Draining Whelk]: https://img.scryfall.com/cards/large/front/c/5/c559d326-b97b-43d9-b7c9-c09e1a0e9db6.jpg 'Draining Whelk'
+[Talrand, Sky Summoner]: https://img.scryfall.com/cards/large/front/8/3/83c74e76-c6ce-4107-8816-0be8c20d7617.jpg 'Talrand, Sky Summoner'
+[Animar, Soul of Elements]: https://img.scryfall.com/cards/large/front/4/6/46407f28-39f6-43ca-b7aa-da5120215c49.jpg 'Animar, Soul of Elements'
+[Rakdos, the Showstopper]: https://img.scryfall.com/cards/large/front/4/e/4e3c30c7-c52e-41a0-b7c2-21d39c05160b.jpg 'Rakdos, the Showstopper'
+[Mana Tithe]: https://img.scryfall.com/cards/large/front/7/d/7d48d622-f397-4f31-b1a5-0c23f60aa71c.jpg 'Mana Tithe'
+[Stifle]: https://img.scryfall.com/cards/large/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.jpg 'Stifle'
+[Ricochet Trap]: https://img.scryfall.com/cards/large/front/5/d/5d782375-9192-4ed0-bd79-f3404e5a1b01.jpg 'Ricochet Trap'
+
 [//]: # 'website links'
 [Gatherer]: https://gatherer.wizards.com/Pages/Advanced.aspx 'Gatherer'
 [MTGGoldfish]: https://www.mtggoldfish.com/ 'MTGGoldfish'
@@ -1381,44 +1189,21 @@ and I wish you the best of luck!
 [Deckstats]: https://deckstats.net/ 'Deckstats'
 [TCGPlayer]: https://www.tcgplayer.com 'TCGPlayer'
 [Scryfall]: https://scryfall.com 'Scryfall'
-[Inked]:
-    https://www.inkedgaming.com/products/custom-playmat
-    'Inked custom playmats'
-[Store Locator]:
-    https://locator.wizards.com/event-reservations-web/?searchType=magic-events&query=Los%20Angeles,%20CA,%20USA&distance=25&page=1&sort=date&sortDirection=asc
-    'WOTC Store Locator'
+[Inked]: https://www.inkedgaming.com/products/custom-playmat 'Inked custom playmats'
+[Store Locator]: https://locator.wizards.com/event-reservations-web/?searchType=magic-events&query=Los%20Angeles,%20CA,%20USA&distance=25&page=1&sort=date&sortDirection=asc 'WOTC Store Locator'
 [//]: # 'examples'
-[Liliana Gatherer]:
-    https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=398441
-    'Liliana, Heretical Healer Gatherer page'
-[non-blue-counters]:
-    https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%22counter+target%22%5d+%5bspell%5d&color=+!%5bU%5d
-    'non-blue counterspells'
-[non-blue-counters-search]:
-    ./images/non-blue-counters-search.png
-    'Search terms for non-blue counterspells'
-[non-blue-counters-terms]:
-    ./images/non-blue-counters-terms.png
-    'Search terms for non-blue counterspells'
-[green white lands]:
-    https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%7bG%7d%5d+%5b%7bW%7d%5d+!%5b%7bB%7d%5d+!%5b%7bR%7d%5d+!%5b%7bU%7d%5d&type=+%5bland%5d
-    'Search for green and white lands'
-[the banlist]:
-    https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted#commander
-    'Commander banlist'
-[The Professor]:
-    https://www.youtube.com/channel/UC7-hR5EfgpM6oHfiGDkxfMA
-    'Tolarian Community College'
+[Liliana Gatherer]: https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=398441 'Liliana, Heretical Healer Gatherer page'
+[non-blue-counters]: https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%22counter+target%22%5d+%5bspell%5d&color=+!%5bU%5d 'non-blue counterspells'
+[non-blue-counters-search]: ./images/non-blue-counters-search.png 'Search terms for non-blue counterspells'
+[non-blue-counters-terms]: ./images/non-blue-counters-terms.png 'Search terms for non-blue counterspells'
+[green white lands]: https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%7bG%7d%5d+%5b%7bW%7d%5d+!%5b%7bB%7d%5d+!%5b%7bR%7d%5d+!%5b%7bU%7d%5d&type=+%5bland%5d 'Search for green and white lands'
+[the banlist]: https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted#commander 'Commander banlist'
+[The Professor]: https://www.youtube.com/channel/UC7-hR5EfgpM6oHfiGDkxfMA 'Tolarian Community College'
+
 [//]: # 'screenshots'
-[green white lands search]:
-    ./images/green-white-lands-search.png
-    'Search terms for green and white lands'
-[green white lands terms]:
-    ./images/green-white-lands-terms.png
-    'Search terms for green and white lands'
-[green white lands exclude]:
-    ./images/green-white-lands-exclude.png
-    'Search terms for green and white lands'
+[green white lands search]: ./images/green-white-lands-search.png 'Search terms for green and white lands'
+[green white lands terms]: ./images/green-white-lands-terms.png 'Search terms for green and white lands'
+[green white lands exclude]: ./images/green-white-lands-exclude.png 'Search terms for green and white lands'
 [My Decks]: ./images/my-decks.png 'Access the Deck Manager'
 [Deck Manager]: ./images/deck-manager.png 'The Deck Manager page'
 [Deck Editor]: ./images/deck-editor.png 'The Deck Editor page'
@@ -1429,15 +1214,11 @@ and I wish you the best of luck!
 [MTGGoldfish Download]: ./images/decklist-download.png 'MTGGoldfish Download'
 [Direct Entry]: ./images/direct-entry.png 'Upload your decklist'
 [EDHREC Search]: ./images/edhrec-search.png 'EDHREC Search'
-[Paste or Upload to Deckstats]:
-    ./images/paste-upload-to-deckstats.png
-    'Paste or Upload to Deckstats'
+[Paste or Upload to Deckstats]: ./images/paste-upload-to-deckstats.png 'Paste or Upload to Deckstats'
 [New Subsection]: ./images/new-subsection.png 'Create a new subsection'
 [Scryfall Search]: ./images/scryfall-search.png 'Scryfall search results'
 [Scryfall Single]: ./images/scryfall-single.png 'Scryfall single card page'
 [Scryfall All]: ./images/scryfall-all.png 'All the printings of Sun Titan'
-[MTGGoldfish Printings]:
-    ./images/mtggoldfish-printings.png
-    'MTGGoldfish Printings'
+[MTGGoldfish Printings]: ./images/mtggoldfish-printings.png 'MTGGoldfish Printings'
 [MTGGoldfish List]: ./images/mtggoldfish-list.png 'MTGGoldfish List'
 [Mass Entry Link]: ./images/mass-entry-link.png 'Mass Entry'

@@ -1077,7 +1077,7 @@ remember that everyone is just there to have fun.
 I hope this guide was helpful. I hope you have a great time playing Commander
 and I wish you the best of luck!
 
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
 [//]: # 'card images'
 [Ancient Grudge]: ./images/cards/ancient-grudge.jpg 'Ancient Grudge is red, but its color identity is red and green'
 [Dovescape]: ./images/cards/dovescape.jpg 'Dovescape is blue and white, and its color identity is blue and white'
@@ -1222,3 +1222,4 @@ and I wish you the best of luck!
 [MTGGoldfish Printings]: ./images/mtggoldfish-printings.png 'MTGGoldfish Printings'
 [MTGGoldfish List]: ./images/mtggoldfish-list.png 'MTGGoldfish List'
 [Mass Entry Link]: ./images/mass-entry-link.png 'Mass Entry'
+<!-- prettier-ignore-end -->

@@ -46,8 +46,8 @@ The deckbuilding rules are the following:
       legendary spacecraft with at least one power/toughness box. Additionally,
       some cards not in these categories specify that they can be your
       commander.
-    - Some cards have various kinds of "parner" abilities. These abilities allow
-      you to have two commanders.
+    - Some cards have various kinds of "partner" abilities. These abilities
+      allow you to have two commanders.
 - You may designate up to one card to be your companion if it has the Companion
   ability and the rest of your deck meets its companion requirements. If you
   have a companion, your deck will consist of 101 cards. You have no sideboard,
@@ -88,7 +88,7 @@ it works.
 In addition to the deckbuilding rules, there are some in-game rules specific to
 Commander.
 
-### Commaner game rules
+### Commander game rules
 
 The relevant game rules are the following:
 
@@ -144,7 +144,7 @@ things going on that it never seems to get boring.
 > **History Note**: Commander is often called Elder Dragon Highlander (EDH).
 > This is a reference to 2 things. First, when Commander was invented, the only
 > legal commanders were the five Elder Dragons, pictured below. Second, the
-> movie _Highlander_ popularaized the phrase "there can only be one," which
+> movie _Highlander_ popularized the phrase "there can only be one," which
 > refers here to the singleton nature of the format. Since all the Elder Dragons
 > have 7 power, the commander damage rule was set at 21 to account for 3 hits
 > from an Elder Dragon.
@@ -178,78 +178,113 @@ start, to where to look for inspiration, to what things to do or avoid.
 ### Starting out
 
 [Gatherer] is the first website that we will introduce. Gatherer is the official
-MTG card database, and it has some powerful search tools built into it. Let's
-take a look at what you can do with it.
+MTG card database, and it has some decent search tools built into it. However,
+[Scryfall] is a much better tool.
 
 > **Note**: Gatherer has all the up-to-date official errata information for
-> every card ever printed. The _official_ rules text of cards is not what is
-> printed on the card, but what it says in Gatherer. This is the official
-> policy, because sometimes the rules of the game change. For some examples,
-> take a look at the cards in the table below. Ancestral Recall used to say
-> "Draw 3 cards or force opponent to draw 3 cards," but it has been changed to
-> say "Target player draws 3 cards" in accordance with the new templating
-> standards. According to some old version of the rules, these things called
-> "mono artifacts" had to be tapped to be used. They later realized that just
-> templating the mono artifacts as regular artifacts with activated abilities
-> made more sense. Glasses of Urza is a great example (see below).
+> every card ever printed. The _official_ rules text of cards (referred to as
+> "oracle text") is not what is printed on the card, but what it says in
+> Gatherer. This is the official policy, because sometimes the rules of the game
+> change. For some examples, take a look at the cards in the table below.
+> Ancestral Recall used to say "Draw 3 cards or force opponent to draw 3 cards,"
+> but it has been changed to say "Target player draws 3 cards" in accordance
+> with the new templating standards. According to some old version of the rules,
+> these things called "mono artifacts" had to be tapped to be used. They later
+> realized that just templating the mono artifacts as regular artifacts with
+> activated abilities made more sense. Glasses of Urza is a great example (see
+> below).
 >
 > |              Old Ancestral Recall               |         New Ancestral Recall          |              Old Glasses of Urza              |         New Glasses of Urza         |
 > | :---------------------------------------------: | :-----------------------------------: | :-------------------------------------------: | :---------------------------------: |
 > | ![Ancestral Recall Beta][Ancestral Recall Beta] | ![Ancestral Recall][Ancestral Recall] | ![Glasses of Urza Beta][Glasses of Urza Beta] | ![Glasses of Urza][Glasses of Urza] |
 >
 > Often times the rules change and cards are not re-printed. Things like "when
-> this creature comes into play" have been changed to "when this creature enters
-> the battlefield." So if you're ever confused about a wording, go to Gatherer
-> to see the official wording updated in accordance with the current rules. Many
-> cards also have rules clarifications detailed in their Gatherer page. Look
-> towards the bottom of [this page][Liliana Gatherer] under "Rulings" for an
-> example.
+> this creature comes into play" were changed to "when this creature enters the
+> battlefield," and then later changed to "when this creature enters." So if
+> you're ever confused about a wording, go to Gatherer to see the official
+> wording updated in accordance with the current rules. Many cards also have
+> rules clarifications detailed in their Gatherer page. Look towards the bottom
+> of [this page][Liliana Gatherer] under "Rulings" for an example.
 
-So what do we do with Gatherer? First of all, we can search for a given type of
-spell. Let's say we are interested in seeing if there's a way to couter spells
-outside of blue. In the Gatherer search page, enter `AND "counter target" spell`
-into the Rules Text filter, and `NOT blue` in the Colors filter. Use the Add
-buttons to add the search criteria. [This link][non-blue-counters] is what you
-should see. I recommend switching the view to "Visual Spoiler" instead of
-"Standard." There are some screenshots below to help out.
+Although Scryfall is unofficial, they do an incredibly good job of updating
+information accurately as soon as it's available. Finding a mistake in Scryfall
+is very rare. There's nothing on Gatherer that isn't on Scryfall (oracle text,
+rulings, format legality, etc.), so you should never really need to go to
+Gatherer. It's just good to know where the official source actually is.
 
-| Quotes tell the database to use the exact order of words; unquoted terms can show up anywhere on the card | Search criteria are shown to the right. Press the Search button to search |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| ![non-blue-counters-search][non-blue-counters-search]                                                     | ![non-blue-counters-terms][non-blue-counters-terms]                       |
+So what do we do with Scryfall? Enter search terms into the search bar. You can
+enter multiple search terms separated by spaces. Regular words in the search bar
+will match words in card names. Words prefixed with a search tag will search
+different attributes of cards. For example, you can search within a card's type
+using `type:`, within a card's oracle text using `oracle:`, within a card's mana
+cost using `cost:`... Most of these can be shorthanded as well, like `t` instead
+of `type` or `o` instead of `oracle`. For a full reference of how to use the
+search syntax, check out the [Syntax Guide].
+
+So let's search for a given type of spell. Counterspells are usually blue; let's
+say we are interested in seeing if there's a way to counter spells outside of
+blue. In the Scryfall search bar, enter `-color:blue o:"counter target" o:spell`
+the search criteria. [This link][non-blue-counters] is what you should see. We
+have three search terms:
+
+- `-color:blue` _The `-` means "not". This matches anything that's not blue_
+- `o:"counter target"` _The quotation marks allow us to search for a string
+  that_ contains spaces.
+- `o:spell`
+
+Cards that match all three of these terms will show up.
 
 Notice that a lot of the cards in these results actually do contain blue mana
-symbols becuase of activated abilities and thanks to the _Devoid_ mechanic. In
+symbols because of activated abilities and thanks to the _Devoid_ mechanic. In
 the next example we will look at one way to mitigate these false positives.
 
-You can ask Gatherer for all kinds of things. Let's say we are building a deck
-with a green and white commander and we want to find some lands that tap for
-both green and white mana. We can use the following search criteria:
+Let's say we are building a deck with a green and white commander and we want to
+find some lands that tap for both green and white mana. We can use the following
+search criteria:
 
-| {W} is the white mana symbol and {G} is the green mana symbol | We need to exclude the other mana symbols in order to find legal cards | We want a land that contains these symbols in its rules text |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------ |
-| ![green white lands search][green white lands search]         | ![green white lands exclude][green white lands exclude]                | ![green white lands terms][green white lands terms]          |
+- `t:land` _We want a card that has the land type_
+- `o:{W} o:{G}` _{W} means the white mana symbol and {G} means the green mana
+  symbol_
+- `-o:{R} -o:{B} -o:{U}` _We need to exclude the other mana symbols in order to
+  find legal cards_
+
+This would get us a decent result, but another way would be to use the color
+identity filter:
+
+- `t:land o:{g} o:{w}` _We want a land that taps for green and white_
+- `id<=wg` _We want a card that falls within the green and white color identity_
 
 Here we make sure to exclude lands that contain the blue, red, and black mana
-symbols, becuase those would be illegal in a deck with a commander whose color
+symbols, because those would be illegal in a deck with a commander whose color
 identity is only green and white. You should end up at [this
-page][green white lands], which has over 29 results. Wow, that's a lot of
+page][green white lands], which has 40+ results. Wow, that's a lot of
 green-white dual lands!
 
-> **NOTE**: keep in mind that there may be other non-obvious factors. In the
-> example above, we do not see lands like Command Tower, Gemstone Mine,
-> Cascading Cataracts, or Painted Bluffs, even though they would be legal in an
-> only green and white deck.
->
-> | Command Tower                   | Gemstone Mine                   | Cascading Cataracts                         | Painted Bluffs                    |
-> | ------------------------------- | ------------------------------- | ------------------------------------------- | --------------------------------- |
-> | ![Command Tower][Command Tower] | ![Gemstone Mine][Gemstone Mine] | ![Cascading Cataracts][Cascading Cataracts] | ![Painted Bluffs][Painted Bluffs] |
+> **EWW**: Wait a second, there's something icky in here. What is that
+> A-Bretagard Stronghold doing? Why does it look like ass? Why is it seemingly
+> not in alphabetical order? It's a digital-only card. You can filter out
+> digital-only cards by adding `-is:digital` to your search terms. [There,
+> that's much better][green white lands no digital].
 
-That should explain, for the most part, how to use Gatherer effectively to get
+> **BUT WAIT**: keep in mind that there may be other non-obvious factors. In the
+> example above, we do not see lands like Command Tower, Gemstone Mine, or
+> Cascading Cataracts, even though they would be legal in an only green and
+> white deck. There are usually some non-obvious factors when searching, so be
+> on the lookout for assumptions you may be making as you search.
+>
+> | Command Tower                   | Gemstone Mine                   | Cascading Cataracts                         |
+> | ------------------------------- | ------------------------------- | ------------------------------------------- |
+> | ![Command Tower][Command Tower] | ![Gemstone Mine][Gemstone Mine] | ![Cascading Cataracts][Cascading Cataracts] |
+
+That should explain, for the most part, how to use Scryfall effectively to get
 the information you want. We saw an example where some extra cards we probably
 didn't want showed up, and we saw an example where some cards we probably wanted
 didn't. You may have to fiddle around a bit or make multiple searches to find
 what you want, but your searches don't have to be well-crafted masterpieces to
 get useful information.
+
+You can ask Scryfall for all kinds of things. Check out the [Syntax Guide] for
+more cool ways to search.
 
 Now that we know how to find cards meeting specific needs, let's talk about
 starting a deck. There are a few approaches to start building a commander deck,
@@ -384,7 +419,7 @@ someone to "accidentally win" out of nowhere.
 
 #### Don't be a troll
 
-Some people like to play cards just becuase they think it's cool, funny, or
+Some people like to play cards just because they think it's cool, funny, or
 annoying. Common cards in this category include Warp World, Scrambleverse,
 Dimensional Breach, and Cataclysm.
 
@@ -646,7 +681,7 @@ people's stuff.
 | ![Swords to Plowshares][Swords to Plowshares] | ![Rapid Hybridization][Rapid Hybridization] | ![Banishing Light][Banishing Light] |
 
 It's also a good idea to have some artifact and enchantment removal. Good cards
-are ones that are versitile, so anything that says "target permanent" like
+are ones that are versatile, so anything that says "target permanent" like
 Vindicate or Anguished Unmaking is good. Cards like Violent Ultimatum and
 Decimate are good because they can hit multiple things at once. Modal removal
 spells like Crush Contraband and Casualties of War are even better because you
@@ -671,7 +706,7 @@ it can eliminate tokens or just clear the board temporarily.
 
 It's sometimes important to have a wrath for artifacts, enchantments, and/or
 planeswalkers as well. Austere Command and Merciless Eviction can selectively
-destroy or exile a certain type of permenant, and Back to Nature and
+destroy or exile a certain type of permanent, and Back to Nature and
 Shatterstorm are great ways to clear away all artifacts or enchantments.
 
 | Austere Command                     | Merciless Eviction                        | Back to Nature                    | Shatterstorm                  |
@@ -690,7 +725,7 @@ Cryptic Command, and Draining Whelk, but there are, of course, many others.
 
 Besides removal, you want to have some card draw. There are many, many ways to
 draw extra cards, whether it's Skullclamp, Greed, Wheel of Fortune, or just
-straigt-up Opportunity, you need some way to refill your hand once you've run
+straight-up Opportunity, you need some way to refill your hand once you've run
 out of spells to cast. Don't underestimate the power of filtering, looting,
 scrying, or just plain drawing cards.
 
@@ -934,7 +969,7 @@ drop after the second optimization.
 After optimization, there will be three carts shown. One only uses items from
 TCGPlayer Direct, one only uses items from certified sellers, and the last one
 uses any cards. In my experience, you should just pick the cheapest one.
-Non-certified sellers are usually very relieable, and when they aren't they are
+Non-certified sellers are usually very reliable, and when they aren't they are
 usually very accommodating.
 
 ### Order the cards
@@ -943,10 +978,10 @@ After selecting the cart you want, go ahead and order the cards! When your
 packages arrive, make sure to leave reviews for the orders. If the order got
 there and it was correct, give 5 stars. If it wasn't correct for any reason,
 give them 1 star and say why you were dissatisfied. This has happened to me
-serveral times, and every single time the seller will contact me, refund me,
-send a replacement, etc. after which I delete my old review and leave a new 3-,
-4-, or 5-star review. One time I got the correct $15 card and the wrong $2 card
-in an order. The seller refunded my entire order of $17 (not just the incorrect
+several times, and every single time the seller will contact me, refund me, send
+a replacement, etc. after which I delete my old review and leave a new 3-, 4-,
+or 5-star review. One time I got the correct $15 card and the wrong $2 card in
+an order. The seller refunded my entire order of $17 (not just the incorrect
 card) and still sent me a replacement of the $2 card. Needless to say, I updated
 my review to 5 stars. Magic card sellers are nice, so don't be afraid to contact
 them if an order is wrong. At the same time, give credit where it is due and
@@ -1091,10 +1126,9 @@ and I wish you the best of luck!
 [Ancestral Recall]: ./images/cards/ancestral-recall-new.jpg 'New wording of Ancestral Recall'
 [Glasses of Urza Beta]: ./images/cards/glasses-of-urza-old.jpg 'Old printing of Glasses of Urza'
 [Glasses of Urza]: ./images/cards/glasses-of-urza-new.jpg 'New printing of Glasses of Urza'
-[Command Tower]: https://img.scryfall.com/cards/large/front/6/d/6d28946e-a478-4e0b-b39b-ec0236ddc9a5.jpg 'Command Tower'
-[Gemstone Mine]: https://img.scryfall.com/cards/large/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg 'Gemstone Mine'
-[Cascading Cataracts]: https://img.scryfall.com/cards/large/front/7/7/778739db-4431-4e58-91de-d2619aeef3ce.jpg 'Cascading Cataracts'
-[Painted Bluffs]: https://img.scryfall.com/cards/large/front/8/b/8b373131-2a1d-4710-8a11-c1b366a174d4.jpg 'Painted Bluffs'
+[Command Tower]: ./images/cards/command-tower.jpg 'Command Tower'
+[Gemstone Mine]: ./images/cards/gemstone-mine.jpg 'Gemstone Mine'
+[Cascading Cataracts]: ./images/cards/cascading-cataracts.jpg 'Cascading Cataracts'
 [Barktooth Warbeard]: https://img.scryfall.com/cards/large/front/b/f/bffbda3c-61c0-421d-a724-6bb9a7005c0f.jpg 'Barktooth Warbeard'
 [Gabriel Angelfire]: https://img.scryfall.com/cards/large/front/2/e/2e349074-1402-44cf-be19-33a661cff3b6.jpg 'Gabriel Angelfire'
 [Gallowbraid]: https://img.scryfall.com/cards/large/front/8/d/8df86192-6374-42ac-94bc-95e2e8284bd6.jpg 'Gallowbraid'
@@ -1184,26 +1218,24 @@ and I wish you the best of luck!
 
 [//]: # 'website links'
 [Gatherer]: https://gatherer.wizards.com/Pages/Advanced.aspx 'Gatherer'
+[Scryfall]: https://scryfall.com 'Scryfall'
+[Syntax Guide]: https://scryfall.com/docs/syntax 'Scryfall syntax guide'
 [MTGGoldfish]: https://www.mtggoldfish.com/ 'MTGGoldfish'
 [EDHREC]: https://edhrec.com/ 'EDHREC'
 [Deckstats]: https://deckstats.net/ 'Deckstats'
 [TCGPlayer]: https://www.tcgplayer.com 'TCGPlayer'
-[Scryfall]: https://scryfall.com 'Scryfall'
 [Inked]: https://www.inkedgaming.com/products/custom-playmat 'Inked custom playmats'
 [Store Locator]: https://locator.wizards.com/event-reservations-web/?searchType=magic-events&query=Los%20Angeles,%20CA,%20USA&distance=25&page=1&sort=date&sortDirection=asc 'WOTC Store Locator'
+
 [//]: # 'examples'
 [Liliana Gatherer]: https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=398441 'Liliana, Heretical Healer Gatherer page'
-[non-blue-counters]: https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%22counter+target%22%5d+%5bspell%5d&color=+!%5bU%5d 'non-blue counterspells'
-[non-blue-counters-search]: ./images/non-blue-counters-search.png 'Search terms for non-blue counterspells'
-[non-blue-counters-terms]: ./images/non-blue-counters-terms.png 'Search terms for non-blue counterspells'
-[green white lands]: https://gatherer.wizards.com/Pages/Search/Default.aspx?output=spoiler&method=visual&action=advanced&text=+%5b%7bG%7d%5d+%5b%7bW%7d%5d+!%5b%7bB%7d%5d+!%5b%7bR%7d%5d+!%5b%7bU%7d%5d&type=+%5bland%5d 'Search for green and white lands'
+[non-blue-counters]: https://scryfall.com/search?q=-color%3Ablue+o%3A%22counter+target%22+o%3Aspell 'non-blue counterspells'
+[green white lands]: https://scryfall.com/search?q=t%3Aland+o%3A%7Bw%7D+o%3A%7Bg%7D+id%3C%3Dwg 'Search for green and white lands'
+[green white lands no digital]: https://scryfall.com/search?q=t%3Aland+o%3A%7Bw%7D+o%3A%7Bg%7D+id%3C%3Dwg+-is%3Adigital&unique=cards&as=grid&order=name 'Search for green and white lands without digital cards'
 [the banlist]: https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted#commander 'Commander banlist'
 [The Professor]: https://www.youtube.com/channel/UC7-hR5EfgpM6oHfiGDkxfMA 'Tolarian Community College'
 
 [//]: # 'screenshots'
-[green white lands search]: ./images/green-white-lands-search.png 'Search terms for green and white lands'
-[green white lands terms]: ./images/green-white-lands-terms.png 'Search terms for green and white lands'
-[green white lands exclude]: ./images/green-white-lands-exclude.png 'Search terms for green and white lands'
 [My Decks]: ./images/my-decks.png 'Access the Deck Manager'
 [Deck Manager]: ./images/deck-manager.png 'The Deck Manager page'
 [Deck Editor]: ./images/deck-editor.png 'The Deck Editor page'
